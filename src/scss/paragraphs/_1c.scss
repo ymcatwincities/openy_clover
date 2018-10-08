@@ -1,0 +1,43 @@
+.paragraph-1c-wrapper {
+  width: 72%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .field-prgf-1c-title {
+    color: $crimson;
+    font-family: 'Quicksand';
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 10px;
+    text-transform: none;
+  }
+
+  .field-prgf-1c-description {
+    color: $aubergine;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .block-description--text {
+    text-align: center;
+
+    .btn-outline-primary {
+      background: $crimson;
+      border: 2px solid $crimson;
+      border-radius: 5px;
+      color: $white;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}

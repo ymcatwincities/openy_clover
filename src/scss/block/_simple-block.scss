@@ -1,0 +1,47 @@
+#block-openy-clover-content {
+  padding: 40px 0;
+}
+
+.simple-block {
+  border-top: 10px solid $crimson;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .simple-block-body {
+    background: $white;
+  }
+
+  .btn-outline-primary {
+    background: $crimson;
+    border-color: $crimson;
+    border-radius: 0 0 10px 10px;
+    color: $white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    width: 100%;
+  }
+
+  .block-description--text {
+    h4 {
+      background: $white;
+      color: $black;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 0;
+      padding: 20px 20px 0;
+      text-transform: uppercase;
+    }
+
+    .field-sb-body {
+      background: $white;
+      padding: 10px 20px 20px;
+    }
+  }
+}
