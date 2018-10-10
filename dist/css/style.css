@@ -34,6 +34,14 @@
     background: #fff;
     padding: 10px 20px 20px; }
 
+.media-image.media img {
+  max-width: 100%;
+  height: auto;
+  width: 100%; }
+
+.row-eq-height {
+  width: 100%; }
+
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
