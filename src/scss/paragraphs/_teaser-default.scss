@@ -1,0 +1,46 @@
+.subprogram-listing-item {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+  margin-top: 0;
+  .banner-bg {
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .content {
+    text-align: center;
+    padding: 50px 0;
+    color: $aubergine;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+
+    h2 {
+      color: $crimson;
+      font-family: 'Quicksand';
+      font-size: 36px;
+      line-height: 48px;
+      padding-bottom: 10px;
+      text-transform: none;
+    }
+  }
+
+  .btn-outline-primary {
+    width: max-content;
+    margin: 0 auto;
+    background: $crimson;
+    border: 2px solid $crimson;
+    border-radius: 5px;
+    color: $white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.image {
+  position: inherit;
+}

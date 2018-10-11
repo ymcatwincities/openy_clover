@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/quicksand/Quicksand-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/roboto/Roboto-Regular.ttf"); }
+
+.container-fluid {
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto; }
+
 #block-openy-clover-content {
   padding: 40px 0; }
 
@@ -45,18 +64,6 @@
 
 .row-eq-height {
   width: 100%; }
-
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../../fonts/quicksand/Quicksand-Medium.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../../fonts/roboto/Roboto-Regular.ttf"); }
 
 .paragraph-1c-wrapper {
   width: 72%;
@@ -179,5 +186,43 @@
     padding: 20px;
     display: inline-block;
     width: auto; }
+
+.subprogram-listing-item {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+  margin-top: 0; }
+  .subprogram-listing-item .banner-bg {
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  .subprogram-listing-item .content {
+    text-align: center;
+    padding: 50px 0;
+    color: #231f20;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px; }
+    .subprogram-listing-item .content h2 {
+      color: #f93549;
+      font-family: 'Quicksand';
+      font-size: 36px;
+      line-height: 48px;
+      padding-bottom: 10px;
+      text-transform: none; }
+  .subprogram-listing-item .btn-outline-primary {
+    width: max-content;
+    margin: 0 auto;
+    background: #f93549;
+    border: 2px solid #f93549;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 27px; }
+
+.image {
+  position: inherit; }
 
 /*# sourceMappingURL=style.css.map */
