@@ -33,6 +33,10 @@
   .simple-block .block-description--text .field-sb-body {
     background: #fff;
     padding: 10px 20px 20px; }
+    .simple-block .block-description--text .field-sb-body p {
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 21px; }
 
 .media-image.media img {
   max-width: 100%;
@@ -47,6 +51,12 @@
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/quicksand/Quicksand-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/roboto/Roboto-Regular.ttf"); }
 
 .paragraph-1c-wrapper {
   width: 72%;
