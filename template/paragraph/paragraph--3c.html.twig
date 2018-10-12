@@ -50,6 +50,12 @@
 {% endif %}
 <div class="container-fluid">
   <div{{ attributes.addClass(classes) }}>
-    {{ content }}
+    <div class="col-12">
+      {{ content.field_prgf_title }}
+      {{ content.field_prgf_description }}
+    </div>
+    {{ content.field_prgf_3c_left }}
+    {{ content.field_prgf_3c_center }}
+    {{ content.field_prgf_3c_right }}
   </div>
 </div>
