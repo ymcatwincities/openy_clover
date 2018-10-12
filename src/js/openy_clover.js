@@ -24,7 +24,7 @@
       '.card h3',
       '.card .node__content',
       '.table-class',
-      '.block-description--text > .field-sb-body'
+      '.featured-highlights .block-description--text > .field-sb-body'
     ];
 
     // make them all equal heights.

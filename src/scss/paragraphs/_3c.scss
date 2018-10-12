@@ -52,6 +52,10 @@
           display: inline-flex;
           padding-bottom: 10px;
 
+          strong {
+            display: contents;
+          }
+
           &:before {
             color: $crimson;
             content: '\f10c';

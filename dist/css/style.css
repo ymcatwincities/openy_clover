@@ -186,6 +186,8 @@
       .block-description--3 .block-description--text .field-sb-body ul li {
         display: inline-flex;
         padding-bottom: 10px; }
+        .block-description--3 .block-description--text .field-sb-body ul li strong {
+          display: contents; }
         .block-description--3 .block-description--text .field-sb-body ul li:before {
           color: #f93549;
           content: '\f10c';
