@@ -1,4 +1,36 @@
 .block-description--2 {
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .header-title {
+    width: 72%;
+    margin: 0 auto;
+  }
+  .field-prgf-title {
+    h2 {
+      color: $crimson;
+      font-family: 'Quicksand';
+      font-size: 36px;
+      line-height: 48px;
+      padding-bottom: 10px;
+      text-transform: none;
+      border-bottom: none;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+  .field-prgf-description {
+    padding: 10px 0 20px;
+    p {
+      color: $aubergine;
+      text-align: center;
+      font-family:'Roboto';
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0;
+    }
+  }
+
   .block-description--text {
     h4 {
       color: $black;
@@ -7,7 +39,7 @@
       font-weight: 700;
       line-height: 36px;
       margin-bottom: 0;
-      padding: 20px 0;
+      padding: 0 0 20px 0;
       text-transform: uppercase;
     }
 
@@ -26,6 +58,11 @@
   }
 
   .field-sb-body {
+    color: $aubergine;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 20px;
     ul {
       list-style: none;
       margin-top: 16px;
@@ -34,6 +71,10 @@
       li {
         display: inline-flex;
         padding-bottom: 10px;
+
+        strong, a {
+          display: contents;
+        }
 
         &:before {
           color: $crimson;
@@ -52,6 +93,7 @@
 
     p {
       color: $aubergine;
+      font-family: 'Roboto';
       font-size: 14px;
       line-height: 21px;
     }
