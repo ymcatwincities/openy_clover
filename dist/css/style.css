@@ -161,6 +161,31 @@
       position: relative;
       width: 100%;
       height: 300px; } }
+  @media (min-width: 767px) {
+    .block-description--3 .media-image.media img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle; }
+    .block-description--3 .media-image.media {
+      position: relative;
+      width: 100%;
+      height: 300px; } }
+  @media only screen and (device-width: 768px) {
+    .block-description--3 .media-image.media img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      position: relative;
+      transform: none;
+      top: 0;
+      left: 0; }
+    .block-description--3 .media-image.media {
+      width: 100%;
+      height: auto; } }
   .block-description--3 .field-prgf-title h2 {
     color: #f93549;
     font-family: 'Quicksand';
