@@ -146,7 +146,21 @@
 .block-description--3 {
   margin-bottom: 0;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  position: relative; }
+  @media (min-width: 767px) {
+    .block-description--3 .media-image.media img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle; }
+    .block-description--3 .media-image.media {
+      position: relative;
+      width: 100%;
+      height: 300px; } }
   .block-description--3 .field-prgf-title h2 {
     color: #f93549;
     font-family: 'Quicksand';
