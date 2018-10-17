@@ -36,14 +36,12 @@
   * @ingroup themeable
   */
   #}
-{%
-  set classes = [
-    'paragraph',
-    'block-description--wrapper',
-    'block-description--2',
-    'row'
-  ]
-%}
+{% set classes = [
+  'paragraph',
+  'block-description--wrapper',
+  'block-description--2',
+  'row'
+] %}
 
 {% if paragraph.field_prfg_display_line_above.value %}
   {% set classes = classes|merge(['block-description--wrapper--outline--top']) %}
@@ -51,6 +49,13 @@
 
 <div class="container-fluid">
   <div{{ attributes.addClass(classes) }}>
-    {{ content }}
+    <div class="col-12">
+      <div class="header-title">
+        {{ content.field_prgf_title }}
+        {{ content.field_prgf_description }}
+      </div>
+    </div>
+    {{ content.field_prgf_2c_left }}
+    {{ content.field_prgf_2c_right }}
   </div>
 </div>
