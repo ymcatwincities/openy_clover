@@ -65,6 +65,66 @@
 .row-eq-height {
   width: 100%; }
 
+.webform-submission-form {
+  padding-top: 0; }
+
+.webform {
+  margin-right: 0;
+  margin-left: 0; }
+
+form {
+  width: 100%; }
+  form .form-control {
+    width: 50%; }
+    @media (max-width: 767px) {
+      form .form-control {
+        width: 100%; } }
+  form .form-tel {
+    width: 50%; }
+    @media (max-width: 767px) {
+      form .form-tel {
+        width: 100%; } }
+
+.form-center {
+  margin: 0 auto;
+  width: 50%; }
+  @media (max-width: 767px) {
+    .form-center {
+      width: 100%; } }
+  .form-center .form-control {
+    width: 100%; }
+
+.form-item .full-width {
+  width: 100%; }
+
+.form-item .control-label {
+  color: #231f20;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700; }
+
+.form-type-checkbox {
+  display: flex; }
+  .form-type-checkbox input[type="checkbox"] {
+    margin-right: 10px; }
+  .form-type-checkbox .control-label {
+    font-weight: 400;
+    margin-top: -5px; }
+
+.form-actions .input-wrapper {
+  text-align: center; }
+  .form-actions .input-wrapper .form-submit {
+    border-radius: 5px;
+    border: 2px solid #f93549;
+    background-color: #f93549;
+    color: #fff;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    padding: 15px 40px;
+    text-transform: uppercase; }
+
 .paragraph-1c-wrapper {
   width: 72%;
   margin: 0 auto; }

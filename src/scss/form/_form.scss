@@ -1,0 +1,82 @@
+.webform-submission-form {
+  padding-top: 0;
+}
+
+.webform {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+form {
+  width: 100%;
+
+  .form-control {
+    width: 50%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .form-tel {
+    width: 50%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.form-center {
+  margin: 0 auto;
+  width: 50%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+
+.form-item {
+  .full-width {
+    width: 100%;
+  }
+}
+
+.form-item {
+  .control-label {
+    color: $aubergine;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.form-type-checkbox {
+  display: flex;
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .control-label {
+    font-weight: 400;
+    margin-top: -5px;
+  }
+}
+
+.form-actions {
+  .input-wrapper {
+    text-align: center;
+    .form-submit {
+      border-radius: 5px;
+      border: 2px solid $crimson;
+      background-color: $crimson;
+      color: #fff;
+      font-family: 'Quicksand';
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      padding: 15px 40px;
+      text-transform: uppercase;
+    }
+  }
+}
