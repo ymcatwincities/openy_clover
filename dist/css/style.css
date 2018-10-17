@@ -93,6 +93,8 @@ form {
       width: 100%; } }
   .form-center .form-control {
     width: 100%; }
+  .form-center .form-tel {
+    width: 100%; }
 
 .form-item .full-width {
   width: 100%; }
