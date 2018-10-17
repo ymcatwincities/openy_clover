@@ -4,8 +4,7 @@
 
 .simple-block {
   border-top: 10px solid $crimson;
-  margin-bottom: 40px;
-  margin-right: 10px;
+  margin: 20px 10px 20px 0;
   @media (max-width: 767px) {
     margin-bottom: 20px;
     margin-right: 0;
@@ -58,4 +57,8 @@
 }
 .row-eq-height {
   width: 100%;
+}
+
+.featured-highlights {
+  padding: 20px 0;
 }

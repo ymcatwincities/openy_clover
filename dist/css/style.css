@@ -22,8 +22,7 @@
 
 .simple-block {
   border-top: 10px solid #f93549;
-  margin-bottom: 40px;
-  margin-right: 10px; }
+  margin: 20px 10px 20px 0; }
   @media (max-width: 767px) {
     .simple-block {
       margin-bottom: 20px;
@@ -65,6 +64,9 @@
 .row-eq-height {
   width: 100%; }
 
+.featured-highlights {
+  padding: 20px 0; }
+
 @media (max-width: 768px) {
   .paragraph-1c-wrapper {
     width: 100%; }
@@ -76,6 +78,7 @@
   color: #f93549;
   font-family: 'Quicksand';
   font-size: 36px;
+  font-weight: 500;
   line-height: 48px;
   padding-bottom: 10px;
   text-transform: none; }
@@ -109,6 +112,7 @@
     color: #f93549;
     font-family: 'Quicksand';
     font-size: 36px;
+    font-weight: 500;
     line-height: 48px;
     padding-bottom: 10px;
     text-transform: none;
@@ -220,6 +224,7 @@
     color: #f93549;
     font-family: 'Quicksand';
     font-size: 36px;
+    font-weight: 500;
     line-height: 48px;
     padding-bottom: 10px;
     text-transform: none;
