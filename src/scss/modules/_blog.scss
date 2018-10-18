@@ -1,0 +1,49 @@
+// teaser
+.node--type-blog.node--view-mode-teaser {
+  margin: auto;
+  width: 100%;
+
+  .inner-wrapper {
+    margin: 0 -15px 20px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0;
+
+    .blog-heading {
+      background-color: transparent;
+      padding: 12px 22px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: left;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    h6 a,
+    h2 a {
+      color: $crimson;
+    }
+
+    h6,
+    h2 {
+      color: $white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
