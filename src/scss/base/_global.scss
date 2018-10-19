@@ -5,3 +5,10 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.viewport {
+  main .layout-content {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
