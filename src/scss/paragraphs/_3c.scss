@@ -3,7 +3,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-
+  .header-title {
+    width: 66%;
+    margin: 0 auto;
+  }
 @media (min-width: 767px) {
   .media-image.media {
     img {
@@ -71,6 +74,7 @@
       color: $crimson;
       font-family: 'Quicksand';
       font-size: 36px;
+      font-weight: 500;
       line-height: 48px;
       padding-bottom: 10px;
       text-transform: none;

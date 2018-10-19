@@ -22,8 +22,7 @@
 
 .simple-block {
   border-top: 10px solid #f93549;
-  margin-bottom: 40px;
-  margin-right: 10px; }
+  margin: 20px 10px 20px 0; }
   @media (max-width: 767px) {
     .simple-block {
       margin-bottom: 20px;
@@ -65,6 +64,7 @@
 .row-eq-height {
   width: 100%; }
 
+<<<<<<< HEAD
 .node--type-blog.node--view-mode-teaser {
   margin: auto;
   width: 100%; }
@@ -170,39 +170,119 @@
         padding-right: 0; } }
   .paragraph-1c-wrapper .field-prgf-1c-title {
     color: #f93549;
+=======
+.featured-highlights {
+  padding: 20px 0; }
+
+.webform-submission-form {
+  padding-top: 0; }
+
+.webform {
+  margin-right: 0;
+  margin-left: 0; }
+
+form {
+  width: 100%; }
+  form .form-control {
+    width: 50%; }
+    @media (max-width: 767px) {
+      form .form-control {
+        width: 100%; } }
+  form .form-tel {
+    width: 50%; }
+    @media (max-width: 767px) {
+      form .form-tel {
+        width: 100%; } }
+
+.form-center {
+  margin: 0 auto;
+  width: 50%; }
+  @media (max-width: 767px) {
+    .form-center {
+      width: 100%; } }
+  .form-center .form-control {
+    width: 100%; }
+  .form-center .form-tel {
+    width: 100%; }
+
+.form-item .full-width {
+  width: 100%; }
+
+.form-item .control-label {
+  color: #231f20;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700; }
+
+.form-type-checkbox {
+  display: flex; }
+  .form-type-checkbox input[type="checkbox"] {
+    margin-right: 10px; }
+  .form-type-checkbox .control-label {
+    font-weight: 400;
+    margin-top: -5px; }
+
+.form-actions .input-wrapper {
+  text-align: center; }
+  .form-actions .input-wrapper .form-submit {
+    border-radius: 5px;
+    border: 2px solid #f93549;
+    background-color: #f93549;
+    color: #fff;
+>>>>>>> 03b4671a4c616456caef5c2dde6b5edcc8fd4d63
     font-family: 'Quicksand';
-    font-size: 36px;
-    line-height: 48px;
-    padding-bottom: 10px;
-    text-transform: none; }
-  .paragraph-1c-wrapper .field-prgf-1c-description {
-    color: #231f20;
-    text-align: center; }
-    .paragraph-1c-wrapper .field-prgf-1c-description p {
-      font-size: 18px;
-      line-height: 27px; }
-  .paragraph-1c-wrapper .block-description--text {
-    text-align: center; }
-    .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
-      background: #f93549;
-      border: 2px solid #f93549;
-      border-radius: 5px;
-      color: #fff;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 18px;
-      line-height: 27px; }
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    padding: 15px 40px;
+    text-transform: uppercase; }
+
+@media (max-width: 768px) {
+  .paragraph-1c-wrapper {
+    width: 100%; }
+    .paragraph-1c-wrapper div {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.paragraph-1c-wrapper .field-prgf-1c-title {
+  color: #f93549;
+  font-family: 'Quicksand';
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  padding-bottom: 10px;
+  text-transform: none; }
+
+.paragraph-1c-wrapper .field-prgf-1c-description {
+  color: #231f20;
+  text-align: center; }
+  .paragraph-1c-wrapper .field-prgf-1c-description p {
+    font-size: 18px;
+    line-height: 27px; }
+
+.paragraph-1c-wrapper .block-description--text {
+  text-align: center; }
+  .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
+    background: #f93549;
+    border: 2px solid #f93549;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 27px; }
 
 .block-description--2 {
   margin-bottom: 0;
   padding-top: 20px;
   padding-bottom: 20px; }
   .block-description--2 .header-title {
-    width: 72%;
+    width: 66%;
     margin: 0 auto; }
   .block-description--2 .field-prgf-title h2 {
     color: #f93549;
     font-family: 'Quicksand';
     font-size: 36px;
+    font-weight: 500;
     line-height: 48px;
     padding-bottom: 10px;
     text-transform: none;
@@ -239,10 +319,6 @@
     display: inline-block;
     width: auto; }
   .block-description--2 .field-sb-body {
-    color: #231f20;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 21px;
     padding-bottom: 20px; }
     .block-description--2 .field-sb-body ul {
       list-style: none;
@@ -273,6 +349,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative; }
+  .block-description--3 .header-title {
+    width: 66%;
+    margin: 0 auto; }
   @media (min-width: 767px) {
     .block-description--3 .media-image.media img {
       position: absolute;
@@ -317,6 +396,7 @@
     color: #f93549;
     font-family: 'Quicksand';
     font-size: 36px;
+    font-weight: 500;
     line-height: 48px;
     padding-bottom: 10px;
     text-transform: none;

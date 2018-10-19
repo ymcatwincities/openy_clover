@@ -46,16 +46,20 @@
 {% if paragraph.field_prfg_display_line_above.value %}
   {% set classes = classes|merge(['block-description--wrapper--outline--top']) %}
 {% endif %}
+{% set background_color = '#' ~ content.field_prgf_color['#items'].entity.field_color.value %}
+{% set bg_color = 'background-color: '  ~  background_color %}
 
-<div class="container-fluid">
-  <div{{ attributes.addClass(classes) }}>
-    <div class="col-12">
-      <div class="header-title">
-        {{ content.field_prgf_title }}
-        {{ content.field_prgf_description }}
+<div {{ attributes.setAttribute('style', bg_color) }}>
+  <div class="container-fluid">
+    <div{{ attributes.addClass(classes) }}>
+      <div class="col-12">
+        <div class="header-title">
+          {{ content.field_prgf_title }}
+          {{ content.field_prgf_description }}
+        </div>
       </div>
+      {{ content.field_prgf_2c_left }}
+      {{ content.field_prgf_2c_right }}
     </div>
-    {{ content.field_prgf_2c_left }}
-    {{ content.field_prgf_2c_right }}
   </div>
 </div>
