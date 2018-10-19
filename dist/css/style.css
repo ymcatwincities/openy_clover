@@ -21,6 +21,11 @@
   margin-bottom: 0 !important;
   padding-bottom: 0 !important; }
 
+footer .container {
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px; }
+
 .simple-block {
   border-top: 10px solid #f93549;
   margin: 20px 10px 20px 0; }
@@ -66,7 +71,8 @@
   width: 100%; }
 
 .featured-highlights {
-  padding: 20px 0; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .node--type-blog.node--view-mode-teaser {
   margin: auto;
