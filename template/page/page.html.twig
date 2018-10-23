@@ -80,14 +80,14 @@
         <button class="ml-auto sidebar-toggle" data-toggle="collapse" data-target=".sidebar-left"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
 
-      <div class="page-head__main-menu col-12">
+      <div class="h-100 page-head__main-menu col-12">
         {{ page.top_menu }}
         {{ page.mobile_menu }}
+        <div class="fixed-bottom d-flex align-items-end mobile-secondary-menu">
+          {{ page.secondary_menu }}
+        </div>
       </div>
     </div>
-      <div class="d-flex align-items-end mobile-secondary-menu">
-        {{ page.secondary_menu }}
-      </div>
   </div>
 
   <div class="viewport">

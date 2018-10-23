@@ -81,6 +81,8 @@ nav .header-content {
   position: fixed;
   top: 0;
   z-index: 2000; }
+  .sidebar .page-head__main-menu {
+    margin-bottom: 80px; }
   .sidebar nav a:hover {
     background: transparent !important; }
   .sidebar nav li a {
@@ -123,11 +125,12 @@ nav .header-content {
   background: #000; }
 
 .mobile-secondary-menu {
-  bottom: 0;
-  width: 100%;
-  position: absolute;
   background-color: #e5e5e5;
-  height: auto; }
+  height: auto;
+  left: 50%; }
+  @media (max-width: 767px) {
+    .mobile-secondary-menu {
+      left: 0; } }
   .mobile-secondary-menu nav ul {
     padding: 0 20px;
     list-style: none;

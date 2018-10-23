@@ -92,6 +92,9 @@ nav .header-content {
   position: fixed;
   top: 0;
   z-index: 2000;
+  .page-head__main-menu {
+    margin-bottom: 80px;
+  }
 
  nav a {
    &:hover {
@@ -157,11 +160,12 @@ nav .header-content {
 }
 
 .mobile-secondary-menu {
-  bottom: 0;
-  width: 100%;
-  position: absolute;
   background-color: #e5e5e5;
   height: auto;
+  left: 50%;
+  @media (max-width: 767px) {
+    left: 0;
+  }
   nav ul {
     padding: 0 20px;
     list-style: none;
