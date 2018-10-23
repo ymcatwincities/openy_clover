@@ -81,6 +81,8 @@ nav .header-content {
   position: fixed;
   top: 0;
   z-index: 2000; }
+  .sidebar nav a:hover {
+    background: transparent !important; }
   .sidebar nav li a {
     color: #fff;
     font-family: 'Quicksand', sans-serif;
@@ -94,6 +96,8 @@ nav .header-content {
     font-weight: 700;
     line-height: 27px;
     width: 90%; }
+    .sidebar .btn-primary-menu:hover {
+      background: #f93549 !important; }
 
 .sidebar.collapse.show {
   width: 50%; }
@@ -119,11 +123,13 @@ nav .header-content {
   background: #000; }
 
 .mobile-secondary-menu {
-  left: 50%;
   bottom: 0;
-  position: fixed;
-  background-color: #e5e5e5; }
+  width: 100%;
+  position: absolute;
+  background-color: #e5e5e5;
+  height: auto; }
   .mobile-secondary-menu nav ul {
+    padding: 0 20px;
     list-style: none;
     margin-top: 16px;
     text-align: center; }
