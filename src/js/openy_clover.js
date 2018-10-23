@@ -13,6 +13,24 @@
     }
   };
 
+  Drupal.behaviors.openyMobileBackground = {
+    attach: function (context, settings) {
+      var sidebar = $('#sidebar');
+      var $target = $('.layout-container');
+      var $body = $('body');
+
+      sidebar.on('show.bs.collapse', function () {
+        $('<div class="overlay">&nbsp;</div>').prependTo($target);
+        $body.addClass('content-mobile-fixed');
+      });
+
+      sidebar.on('hide.bs.collapse', function () {
+        $('.overlay').remove();
+        $body.removeClass('content-mobile-fixed');
+      });
+    }
+  };
+
   function matchAllHeight() {
     var el = [
       '.viewport .page-head__main-menu .nav-level-3 > a',

@@ -72,20 +72,22 @@
     </nav>
   </div>
 
-  <div id="sidebar" class="sidebar sidebar-left fixed-top collapse fade">
+  <div id="sidebar" class="text-center d-flex ml-auto sidebar sidebar-left fixed-top collapse fade">
     <div class="row px-3 px-lg-0">
 
-      <div class="search-form-wrapper col-12 border-top border-bottom">
-        <form method="get" action="{{ base_path }}search">
-          <i class="fa fa-search search-input-decoration" aria-hidden="true"></i>
-          <input type="search" name="query" class="search-input" placeholder="Search">
-          <input type="submit" type="submit" value="Search">
-        </form>
+      <div class="d-flex w-100 p-3 top-bar">
+        <a class="home-icon d-flex align-items-center" href="{{ base_path }}" title="{{ 'Open Y'|t }}"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <button class="ml-auto sidebar-toggle" data-toggle="collapse" data-target=".sidebar-left"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
 
       <div class="page-head__main-menu col-12">
         {{ page.top_menu }}
         {{ page.mobile_menu }}
+        <div class="test">
+        <div class="d-flex align-items-end mobile-secondary-menu">
+        {{ page.secondary_menu }}
+        </div>
+        </div>
       </div>
 
     </div>
@@ -98,7 +100,7 @@
         <nav class="nav-global navbar-ymcags navbar p-0">
           <div class="w-100 m-0 p-0">
 
-            {# sitename & secondary menu #}
+            {# secondary menu #}
             <div class="page-head__top-menu d-flex align-items-stretch w-100">
               <div class="container-fluid">
                 <div class="col-12">
@@ -107,7 +109,7 @@
               </div>
             </div>
 
-            {# search #}
+            {# site name & primary menu #}
             <div class="col-md-12 header-content d-none d-sm-block p-0">
               <div class="container-fluid">
                 <div class="row">
