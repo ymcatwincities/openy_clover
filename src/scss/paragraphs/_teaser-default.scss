@@ -26,6 +26,21 @@
     width: 100%;
   }
 
+  .content-without-bg {
+    .teaser-content {
+      color: #231f20;
+      h2 {
+        color: $crimson;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        text-transform: none;
+      }
+    }
+  }
+
   .content {
     float: right !important;
     position: relative;

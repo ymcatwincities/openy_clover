@@ -1,3 +1,13 @@
+.path-frontpage {
+  .field-prgf-2c-right {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+  }
+}
+
+
 .block-description--2 {
   margin-bottom: 0;
   padding-top: 20px;
@@ -59,6 +69,10 @@
   }
 
   .field-sb-body {
+    color: $aubergine;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 21px;
     padding-bottom: 20px;
     ul {
       list-style: none;
@@ -88,11 +102,20 @@
       font-weight: 700;
     }
 
-    p {
+    .h2 {
+      color: #f93549;
+      font-family: 'Quicksand';
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 54px;
+    }
+
+    .large-text {
       color: $aubergine;
       font-family: 'Roboto';
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
     }
   }
 }

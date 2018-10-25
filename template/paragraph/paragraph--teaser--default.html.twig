@@ -49,11 +49,11 @@
     </div>
   {% endif %}
   <div class="container-fluid">
-    {% if content.field_prgf_title.0['#context'].value is not empty %}
+    {% if paragraph.field_prgf_image is not empty is not empty %}
     <div class="col-md-12 content">
       <div class="teaser-box-content"></div>
       {% else %}
-      <div class="col-md-12 content my-0">
+      <div class="col-md-12 content content-without-bg my-0">
         {% endif %}
         <div class="teaser-content">
           {{ content.field_prgf_title }}
