@@ -6,6 +6,15 @@
       padding-right: 0;
     }
   }
+
+  .header-title {
+    width: 100%;
+    @media (min-width: 992px) {
+      width: 66%;
+      margin: 0 auto;
+    }
+  }
+
   .field-prgf-1c-title {
     color: $crimson;
     font-family: 'Quicksand';
