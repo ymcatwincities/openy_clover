@@ -74,7 +74,9 @@
             <h4 {% if icon_class %}class="with-icon"{% endif %}>{{ item.content.field_sb_title|raw|render}}</h4>
           {% else %}
             {{ item.content.field_icon }}
+            {% if item.content.field_sb_title|render %}
             <h4 {% if icon %}class="with-icon"{% endif %}>{{ item.content.field_sb_title|raw|render }}</h4>
+              {% endif %}
           {% endif %}
 
           {{ item.content|without('field_icon', 'field_icon_class', 'field_sb_title') }}
