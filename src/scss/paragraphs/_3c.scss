@@ -17,7 +17,7 @@
     width: auto;
   }
 
-  @media (min-width: 767px ) {
+  @media (min-width: 768px ) {
     .media-image.media {
       img {
         position: absolute;
@@ -35,6 +35,9 @@
       position: relative;
       width: 100%;
       height: 270px;
+      @media (min-width: 767px) and (max-width: 992px) {
+        height: 160px;
+      }
     }
 
     .media--blazy.media {
