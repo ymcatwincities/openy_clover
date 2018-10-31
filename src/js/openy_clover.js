@@ -44,7 +44,7 @@
       '.table-class',
       '.featured-highlights .block-description--text > .field-sb-body',
       '.block-description--3 .media.media-image',
-      '.prev-next'
+      '.prev-next-body'
     ];
 
     // make them all equal heights.
