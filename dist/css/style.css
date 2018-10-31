@@ -301,6 +301,37 @@ nav .header-content {
     line-height: 21px;
     padding-top: 20px; }
 
+.banner-zone-node {
+  position: relative; }
+  .banner-zone-node .banner-bg,
+  .banner-zone-node .banner--medium .banner-cta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1; }
+    @media (min-width: 768px) {
+      .banner-zone-node .banner-bg,
+      .banner-zone-node .banner--medium .banner-cta {
+        min-height: auto; } }
+    @media (min-width: 576px) {
+      .banner-zone-node .banner-bg,
+      .banner-zone-node .banner--medium .banner-cta {
+        min-height: auto; } }
+
+.banner--small .banner-title {
+  text-transform: none;
+  font-family: 'Quicksand';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0; }
+
+@media (min-width: 992px) {
+  .banner-zone-node .banner-cta {
+    padding-top: 180px; } }
+
 .webform-submission-form {
   padding-top: 0; }
 
