@@ -1,0 +1,51 @@
+.block-prev {
+  position: relative;
+  top: 50%;
+  @media (max-width: 575px) {
+    top: 0;
+    margin: 10px 0;
+  }
+}
+.block-next {
+  position: relative;
+  bottom: 50%;
+
+  @media (max-width: 575px) {
+    bottom: 0;
+    margin: 10px 0;
+  }
+}
+
+.prev-next {
+  padding: 20px 0;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fff;
+
+  h4 {
+    color: $black;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .text-description {
+    color: $crimson;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  i {
+    font-size: 50px;
+    color: $crimson;
+    margin: 0 20px;
+  }
+
+  @media (max-width: 767px) {
+    height: auto;
+  }
+}

@@ -674,4 +674,46 @@ form {
     font-weight: 700;
     padding: 16px 20px; }
 
+.block-prev {
+  position: relative;
+  top: 50%; }
+  @media (max-width: 575px) {
+    .block-prev {
+      top: 0;
+      margin: 10px 0; } }
+
+.block-next {
+  position: relative;
+  bottom: 50%; }
+  @media (max-width: 575px) {
+    .block-next {
+      bottom: 0;
+      margin: 10px 0; } }
+
+.prev-next {
+  padding: 20px 0;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fff; }
+  .prev-next h4 {
+    color: #000;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase; }
+  .prev-next .text-description {
+    color: #f93549;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px; }
+  .prev-next i {
+    font-size: 50px;
+    color: #f93549;
+    margin: 0 20px; }
+  @media (max-width: 767px) {
+    .prev-next {
+      height: auto; } }
+
 /*# sourceMappingURL=style.css.map */
