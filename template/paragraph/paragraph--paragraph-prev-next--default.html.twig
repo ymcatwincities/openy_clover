@@ -44,9 +44,9 @@
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ] %}
 
-{% set background_color_top_line = '#' ~ content.field_prgf_color_top['#items'].entity.field_color.value %}
+{% set background_color_top = '#' ~ content.field_prgf_color_top['#items'].entity.field_color.value %}
 {% set bg_color_top = 'background-color: '  ~  background_color_top %}
-{% set background_color_bottom_line = '#' ~ content.field_prgf_color_bottom['#items'].entity.field_color.value %}
+{% set background_color_bottom = '#' ~ content.field_prgf_color_bottom['#items'].entity.field_color.value %}
 {% set bg_color_bottom = 'background-color: '  ~  background_color_bottom %}
 
 {% block paragraph %}
