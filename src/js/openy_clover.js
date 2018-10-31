@@ -43,7 +43,8 @@
       '.card .node__content',
       '.table-class',
       '.featured-highlights .block-description--text > .field-sb-body',
-      '.block-description--3 .media.media-image'
+      '.block-description--3 .media.media-image',
+      '.prev-next-body'
     ];
 
     // make them all equal heights.
