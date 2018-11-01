@@ -51,16 +51,12 @@
 
   <div class="top-navs fixed-top d-block d-lg-none">
     <nav class="nav-global navbar-default navbar navbar-dark">
-      <div class="container-fluid p-0">
+      <div class="container-fluid">
         <div class="d-flex w-100">
 
-          <div class="col-auto mr-auto">
-            {% block page_logo %}
-              {{ page.logo }}
-            {% endblock %}
-          </div>
+          <a class="navbar-brand" href="{{ base_path }}" title="{{ "OpenY"|t }}" rel="{{ "OpenY"|t }}"></a>
 
-          <div class="col-auto">
+          <div class="ml-auto">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target=".sidebar-left"
                     aria-controls="sidebar-left" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -76,8 +72,11 @@
     <div class="row px-3 px-lg-0">
 
       <div class="d-flex w-100 p-3 top-bar">
-        <a class="home-icon d-flex align-items-center" href="{{ base_path }}" title="{{ 'Open Y'|t }}"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <button class="ml-auto sidebar-toggle" data-toggle="collapse" data-target=".sidebar-left"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <a class="home-icon d-flex align-items-center" href="{{ base_path }}" title="{{ 'Open Y'|t }}"><i
+            class="fa fa-home" aria-hidden="true"></i></a>
+        <button class="ml-auto sidebar-toggle" data-toggle="collapse" data-target=".sidebar-left"><i class="fa fa-times"
+                                                                                                     aria-hidden="true"></i>
+        </button>
       </div>
 
       <div class="h-100 page-head__main-menu col-12">
@@ -109,7 +108,7 @@
             </div>
 
             {# site name & primary menu #}
-            <div class="col-md-12 header-content d-none d-sm-block p-0">
+            <div class="col-md-12 header-content d-none d-sm-block my-3 p-0">
               <div class="container-fluid">
                 <div class="row">
                   <div class="d-flex align-items-stretch w-100">

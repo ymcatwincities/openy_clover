@@ -18,8 +18,12 @@
 {% block content %}
   {% if site_logo %}
     <a class="logo d-block" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-      <img class="logo-img" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+      <img class="logo-img" src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
     </a>
+  {% else %}
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand" href="{{ base_path }}" title="{{ "OpenY"|t }}" rel="{{ "OpenY"|t }}"></a>
+    </div>
   {% endif %}
 
   <span class="d-none">
