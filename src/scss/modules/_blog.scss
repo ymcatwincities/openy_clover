@@ -47,3 +47,57 @@
     }
   }
 }
+
+
+.back-to-blog {
+  background: $crimson;
+  a {
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+}
+h1.blog-title {
+  color: #000000;
+  font-family: 'Quicksand';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.node--type-blog {
+  color: $aubergine;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  a {
+    color: $crimson;
+  }
+}
+
+.blog-image {
+  @media (min-width: 767px) {
+    float: right;
+    width: 360px;
+    padding-left: 20px;
+  }
+  img {
+    border-radius: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.prev-next-block-post {
+  border-top: 1px solid #707070;
+  a {
+    color: $crimson;
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+}

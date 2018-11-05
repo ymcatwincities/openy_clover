@@ -108,10 +108,10 @@
             </div>
 
             {# site name & primary menu #}
-            <div class="col-md-12 header-content d-none d-sm-block my-3 p-0">
+            <div class="col-md-12 header-content d-none d-sm-block p-0">
               <div class="container-fluid">
                 <div class="row">
-                  <div class="d-flex align-items-stretch w-100">
+                  <div class="d-flex align-items-stretch w-100 my-3">
                     <div class="col-md-3 site-name d-flex">
                       <div class="d-flex align-items-center">
                         {{ page.logo }}
@@ -139,7 +139,7 @@
 
     <main role="main" class="clearfix">
       <a id="main-content" tabindex="-1"></a>
-      <div class="layout-content py-3 mb-5 my-lg-5">
+      <div class="layout-content">
         {% block pagecontent %}
           {{ page.content }}
         {% endblock %}

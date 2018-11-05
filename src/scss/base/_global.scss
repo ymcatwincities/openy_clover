@@ -6,6 +6,12 @@
   margin-left: auto;
 }
 
+.container-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .viewport {
   main .layout-content {
     margin-bottom: 0 !important;
@@ -13,6 +19,11 @@
   }
 }
 
+@media (min-width: 992px) {
+  .without-banner .viewport {
+    margin-top: 168px;
+  }
+}
 footer .container {
   max-width: 1200px;
   padding-right: 20px;
@@ -164,7 +175,21 @@ nav .header-content {
     border: 0;
   }
 }
-
+.without-banner {
+  .top-navs {
+    background-color: #000;
+  }
+  .top-navs.menu-in,
+  .top-navs.affix,
+  .top-navs.affix.menu-in {
+    background: #000;
+  }
+}
+@media (max-width: 992px) {
+  .without-banner .viewport {
+    margin-top:  70px;
+  }
+}
 .with-banner {
   .layout-container {
     .top-navs {
