@@ -68,28 +68,14 @@
  */
 #}
 
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class
-  ]
-%}
-{#{% include '@openy_carnation/node/include/header-default.html.twig' %}#}
-
-{#<div class="banner-cta d-block d-lg-flex">#}
-  {#<div class="banner-cta-content container align-items-center m-auto py-4 py-lg-5 text-white">#}
-    {#<div class="banner-cta-section">#}
-      {#<a href="{{ back_link_path }}">#}
-        {#{{ back_link_title }}#}
-      {#</a>#}
-    {#</div>#}
-  {#</div>#}
-{#</div>#}
-
+{% set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class
+] %}
     {% if node.getType() is same as('blog') %}
       <div class="banner-cta d-block d-lg-flex back-to-blog">
         <div class="banner-cta-content container align-items-center m-auto py-2 py-lg-2 text-white">
@@ -113,13 +99,13 @@
     <div class="copy col-12">
 
       {% if label|render|trim is not empty %}
-      <h1 class="blog-title text-center my-4">
-        {{node.label}}
-      </h1>
-        {% endif %}
+        <h1 class="blog-title text-center my-4">
+          {{ node.label }}
+        </h1>
+      {% endif %}
 
-      <div class="text-center mb-3">
-        <a href="#"> Events</a>
+      <div class="text-center mb-3 blog-tags-link font-italic">
+        <a href="#">Events</a>
         +
         <a href="#">Open Y Summit</a>
       </div>
@@ -127,9 +113,9 @@
       <article{{ attributes.addClass(classes) }}>
         <div{{ content_attributes.addClass('node__content') }}>
           {% if content.field_blog_image|render|trim is not empty %}
-          <div class="blog-image">
-            {{ content.field_blog_image }}
-          </div>
+            <div class="blog-image">
+              {{ content.field_blog_image }}
+            </div>
           {% endif %}
           {{ content.field_blog_description }}
 
@@ -141,12 +127,16 @@
     </div>
     <div class="col-12 my-4">
       <div class="prev-next-block-post pt-4">
-        <a href="{{prev_link }}">
-          {{ prev }}
-        </a>
-        <a href="{{next_link }}" class="float-right">
-          {{ next }}
-        </a>
+        {% if  prev_link %}
+          <a href="{{ prev_link }}">
+            {{ prev }}
+          </a>
+        {% endif %}
+        {% if  next_link %}
+          <a href="{{ next_link }}" class="float-right">
+            {{ next }}
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>

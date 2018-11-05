@@ -30,13 +30,13 @@ function openy_clover_preprocess_node(&$variables) {
     sort($array_nid);
     $current_key = array_search($current_nid, $array_nid);
 
-    if(isset($array_nid[$current_key - 1])) {
+    if (isset($array_nid[$current_key - 1])) {
       $prev = t('< Previous Post');
       $variables['prev'] = $prev;
       $variables['prev_link'] = Url::fromRoute('entity.node.canonical', ['node' => $array_nid[$current_key - 1]])->toString();
     }
 
-    if(isset($array_nid[$current_key + 1])) {
+    if (isset($array_nid[$current_key + 1])) {
       $next = t('Next Post >');
       $variables['next'] = $next;
       $variables['next_link'] = Url::fromRoute('entity.node.canonical', ['node' => $array_nid[$current_key + 1]])->toString();

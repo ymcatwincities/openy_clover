@@ -325,10 +325,16 @@ h1.blog-title {
   .prev-next-block-post a {
     color: #f93549;
     text-decoration: underline;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 700;
     line-height: 21px; }
+
+.blog-tags-link a {
+  color: #f93549;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 21px; }
 
 .pre-footer {
   background-color: #f93549;
