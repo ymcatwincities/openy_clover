@@ -815,19 +815,14 @@ form {
 
 .block-prev {
   position: relative;
-  top: 50%; }
-  @media (max-width: 575px) {
-    .block-prev {
-      top: 0;
-      margin: 10px 0; } }
+  bottom: 50%; }
 
 .block-next {
   position: relative;
   bottom: 50%; }
-  @media (max-width: 575px) {
-    .block-next {
-      bottom: 0;
-      margin: 10px 0; } }
+
+.block-link {
+  margin-bottom: -30px; }
 
 .prev-next {
   padding: 20px 0;

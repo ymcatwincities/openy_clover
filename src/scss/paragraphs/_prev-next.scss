@@ -1,21 +1,14 @@
 .block-prev {
   position: relative;
-  top: 50%;
-  @media (max-width: 575px) {
-    top: 0;
-    margin: 10px 0;
-  }
+  bottom: 50%;
 }
 .block-next {
   position: relative;
   bottom: 50%;
-
-  @media (max-width: 575px) {
-    bottom: 0;
-    margin: 10px 0;
-  }
 }
-
+.block-link {
+  margin-bottom: -30px;
+}
 .prev-next {
   padding: 20px 0;
   border: 2px solid #e5e5e5;
