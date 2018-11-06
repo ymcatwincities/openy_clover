@@ -43,6 +43,10 @@ footer .container {
     height: 57%;
     width: 147px; } }
 
+.viewport .nav-global {
+  border: none;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2); }
+
 .page-head__top-menu {
   background-color: #e5e5e5; }
   .page-head__top-menu nav ul {
@@ -73,6 +77,8 @@ nav .header-content {
     line-height: 27px;
     text-transform: uppercase;
     padding: 30px 0; }
+  .page-head__main-menu .navbar li a:hover {
+    color: #f93549; }
 
 .page-head__main-menu .navbar .btn-primary-menu {
   background: #f93549;
@@ -141,6 +147,12 @@ nav .header-content {
 .with-banner .layout-container .top-navs.affix,
 .with-banner .layout-container .top-navs.affix.menu-in {
   background: #000; }
+
+@media (min-width: 992px) {
+  .without-banner .top-navs:not(.affix) .page-head__main-menu .navbar > li > a {
+    color: #fff; }
+    .without-banner .top-navs:not(.affix) .page-head__main-menu .navbar > li > a:hover {
+      color: #f93549; } }
 
 .mobile-secondary-menu {
   background-color: #e5e5e5;

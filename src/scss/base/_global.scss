@@ -39,6 +39,13 @@ footer .container {
   }
 }
 
+
+.viewport .nav-global {
+  border: none;
+  box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+}
+
+
 .page-head__top-menu {
   background-color: #e5e5e5;
   nav ul {
@@ -76,6 +83,10 @@ nav .header-content {
       line-height: 27px;
       text-transform: uppercase;
       padding: 30px 0;
+    }
+
+    a:hover {
+      color: $crimson;
     }
   }
 
@@ -116,11 +127,11 @@ nav .header-content {
     margin-bottom: 80px;
   }
 
- nav a {
-   &:hover {
-     background: transparent !important;
-   }
- }
+  nav a {
+    &:hover {
+      background: transparent !important;
+    }
+  }
 
   nav li {
     a {
@@ -175,6 +186,15 @@ nav .header-content {
     .top-navs.affix,
     .top-navs.affix.menu-in {
       background: #000;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .without-banner .top-navs:not(.affix) .page-head__main-menu .navbar > li > a {
+    color: $white;
+    &:hover {
+      color: $crimson;
     }
   }
 }
