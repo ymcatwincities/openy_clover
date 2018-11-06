@@ -822,9 +822,10 @@ form {
   bottom: 50%; }
 
 .block-link {
-  margin-bottom: -30px; }
+  margin-bottom: -50px; }
 
 .prev-next {
+  margin: 20px 0;
   padding: 20px 0;
   border: 2px solid #e5e5e5;
   border-radius: 10px;
