@@ -73,16 +73,24 @@
   }
 
   .btn-outline-primary {
-    margin: 10px auto;
-    width: max-content;
     background: $crimson;
     border: 2px solid $crimson;
     border-radius: 5px;
     color: $white;
+    margin: 10px auto;
+    width: max-content;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 700;
     padding: 16px 20px;
+    &:active {
+      background: $crimson;
+      border-color: $crimson;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+
   }
 }

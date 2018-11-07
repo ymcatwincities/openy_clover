@@ -125,16 +125,24 @@
     }
 
     .btn-outline-primary {
-      background: $white;
+      background: $crimson;
       border: 2px solid $crimson;
       border-radius: 5px;
-      color: $crimson;
+      color: $white;
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
       line-height: 27px;
       padding: 20px;
       display: inline-block;
       width: auto;
+      font-weight: 700;
+      &:active {
+        background: $crimson;
+        border-color: $crimson;
+      }
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 }

@@ -10,6 +10,18 @@
   font-weight: normal;
   src: url("../../fonts/roboto/Roboto-Regular.ttf"); }
 
+a[href*="://"].btn.btn-outline-primary {
+  background: #fff;
+  border: 2px solid #f93549;
+  color: #f93549; }
+  a[href*="://"].btn.btn-outline-primary:active {
+    background: #fff;
+    border-color: #f93549;
+    color: #f93549; }
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none; }
+
 .container-fluid {
   max-width: 1200px;
   padding-right: 20px;
@@ -543,7 +555,14 @@ form {
     color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    line-height: 27px; }
+    line-height: 27px;
+    padding: 20px;
+    font-weight: 700; }
+    .paragraph-1c-wrapper .block-description--text .btn-outline-primary:active {
+      background: #f93549;
+      border-color: #f93549; }
+    .paragraph-1c-wrapper .block-description--text .btn-outline-primary:focus {
+      box-shadow: none; }
 
 .block-description--2 {
   margin-bottom: 0;
@@ -589,16 +608,22 @@ form {
     padding: 0 0 20px 0;
     text-transform: uppercase; }
   .block-description--2 .block-description--text .btn-outline-primary {
-    background: #fff;
+    background: #f93549;
     border: 2px solid #f93549;
     border-radius: 5px;
-    color: #f93549;
+    color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     line-height: 27px;
     padding: 20px;
     display: inline-block;
-    width: auto; }
+    width: auto;
+    font-weight: 700; }
+    .block-description--2 .block-description--text .btn-outline-primary:active {
+      background: #f93549;
+      border-color: #f93549; }
+    .block-description--2 .block-description--text .btn-outline-primary:focus {
+      box-shadow: none; }
   .block-description--2 .field-sb-body {
     color: #231f20;
     font-family: 'Roboto';
@@ -731,16 +756,22 @@ form {
       color: #f93549;
       font-weight: 700; }
     .block-description--3 .block-description--text .btn-outline-primary {
-      background: #fff;
+      background: #f93549;
       border: 2px solid #f93549;
       border-radius: 5px;
-      color: #f93549;
+      color: #fff;
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
       line-height: 27px;
       padding: 20px;
       display: inline-block;
-      width: auto; }
+      width: auto;
+      font-weight: 700; }
+      .block-description--3 .block-description--text .btn-outline-primary:active {
+        background: #f93549;
+        border-color: #f93549; }
+      .block-description--3 .block-description--text .btn-outline-primary:focus {
+        box-shadow: none; }
 
 .subprogram-listing-item {
   position: relative;
@@ -801,17 +832,22 @@ form {
         padding-bottom: 10px;
         margin-bottom: 0; }
   .subprogram-listing-item .btn-outline-primary {
-    margin: 10px auto;
-    width: max-content;
     background: #f93549;
     border: 2px solid #f93549;
     border-radius: 5px;
     color: #fff;
+    margin: 10px auto;
+    width: max-content;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 700;
     padding: 16px 20px; }
+    .subprogram-listing-item .btn-outline-primary:active {
+      background: #f93549;
+      border-color: #f93549; }
+    .subprogram-listing-item .btn-outline-primary:focus {
+      box-shadow: none; }
 
 .block-prev {
   position: relative;

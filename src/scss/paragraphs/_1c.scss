@@ -46,6 +46,15 @@
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
       line-height: 27px;
+      padding: 20px;
+      font-weight: 700;
+      &:active {
+        background: $crimson;
+        border-color: $crimson;
+      }
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 }
