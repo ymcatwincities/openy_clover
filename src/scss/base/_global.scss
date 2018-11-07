@@ -208,6 +208,7 @@ nav .header-content {
     border: 0;
   }
 }
+
 .without-banner {
   .top-navs {
     background-color: #000;
@@ -218,11 +219,13 @@ nav .header-content {
     background: #000;
   }
 }
+
 @media (max-width: 992px) {
   .without-banner .viewport {
     margin-top:  70px;
   }
 }
+
 .with-banner {
   .layout-container {
     .top-navs {
