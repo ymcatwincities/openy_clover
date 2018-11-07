@@ -230,6 +230,12 @@ nav .header-content {
   height: 100%;
   overflow: hidden; }
 
+.content {
+  padding-top: 169px; }
+  @media (max-width: 992px) {
+    .content {
+      padding-top: 70px; } }
+
 .simple-block {
   border-top: 10px solid #f93549;
   margin: 20px 10px 20px 0; }
@@ -442,17 +448,48 @@ h1.blog-title {
       .banner-zone-node .banner--medium .banner-cta {
         min-height: auto; } }
 
-.banner--small .banner-title {
+.paragraph--type--banner .banner-title {
   text-transform: none;
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
   letter-spacing: 0; }
+  @media (max-width: 992px) {
+    .paragraph--type--banner .banner-title {
+      font-size: 36px;
+      line-height: 48px; } }
+
+.banner-title {
+  text-transform: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0; }
+  @media (max-width: 992px) {
+    .banner-title {
+      font-size: 36px;
+      line-height: 48px; } }
+
+.banner-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase; }
+  @media (max-width: 992px) {
+    .banner-description {
+      font-size: 18px;
+      line-height: 27px; } }
 
 @media (min-width: 992px) {
   .banner-zone-node .banner-cta {
-    padding-top: 170px; } }
+    padding-top: 0; } }
+
+.banner--small {
+  min-height: auto;
+  padding-top: 0; }
 
 .webform-submission-form {
   padding-top: 0; }
