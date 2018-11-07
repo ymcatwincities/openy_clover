@@ -255,8 +255,9 @@ nav .header-content {
     font-weight: 700;
     line-height: 27px;
     width: 100%; }
+  .simple-block .block-description--text .block-heading {
+    background: #fff; }
   .simple-block .block-description--text h4 {
-    background: #fff;
     color: #000;
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
@@ -265,7 +266,6 @@ nav .header-content {
     padding: 20px 20px 0;
     text-transform: uppercase; }
   .simple-block .block-description--text .field-sb-body {
-    background: #fff;
     padding: 10px 20px 20px; }
     .simple-block .block-description--text .field-sb-body p {
       font-family: 'Roboto';

@@ -42,7 +42,7 @@
       '.card h3',
       '.card .node__content',
       '.table-class',
-      '.featured-highlights .block-description--text > .field-sb-body',
+      '.simple-block .block-description--text > .block-heading',
       '.block-description--3 .media.media-image',
       '.prev-next-body'
     ];
