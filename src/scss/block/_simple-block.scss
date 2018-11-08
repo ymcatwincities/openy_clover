@@ -17,14 +17,15 @@
     color: $white;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    font-weight: 700;
     line-height: 27px;
     width: 100%;
+    letter-spacing: 1px;
   }
 
   .block-description--text {
     .block-heading {
       background: $white;
+      border: 1px solid #e5e5e5;
     }
 
     h4 {

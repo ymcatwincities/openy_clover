@@ -255,11 +255,12 @@ nav .header-content {
     color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    font-weight: 700;
     line-height: 27px;
-    width: 100%; }
+    width: 100%;
+    letter-spacing: 1px; }
   .simple-block .block-description--text .block-heading {
-    background: #fff; }
+    background: #fff;
+    border: 1px solid #e5e5e5; }
   .simple-block .block-description--text h4 {
     color: #000;
     font-family: 'Quicksand', sans-serif;
@@ -606,8 +607,8 @@ form {
 
 .block-description--2 {
   margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .block-description--2 .prgf-2c-with-border {
     padding: 20px;
     border: 2px solid #e5e5e5;
@@ -655,7 +656,7 @@ form {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     line-height: 27px;
-    padding: 20px;
+    padding: 15px 18px;
     display: inline-block;
     width: auto;
     font-weight: 700; }
@@ -666,10 +667,11 @@ form {
       box-shadow: none; }
   .block-description--2 .field-sb-body {
     color: #231f20;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 21px;
-    padding-bottom: 20px; }
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px; }
+    .block-description--2 .field-sb-body p {
+      margin-bottom: 20px;
+      font-size: 14px; }
     .block-description--2 .field-sb-body ul {
       list-style: none;
       margin-top: 16px;
