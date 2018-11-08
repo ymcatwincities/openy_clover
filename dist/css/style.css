@@ -857,9 +857,12 @@ form {
     line-height: 27px;
     margin: 40px 0; }
     .subprogram-listing-item .content .teaser-content {
-      width: 66%;
+      padding: 0 20px;
       position: relative;
       margin: 0 auto; }
+      @media (min-width: 992px) {
+        .subprogram-listing-item .content .teaser-content {
+          width: 66%; } }
       .subprogram-listing-item .content .teaser-content h2 {
         font-family: 'Quicksand', sans-serif;
         font-size: 36px;
