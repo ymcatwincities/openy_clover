@@ -9,6 +9,10 @@ a[href*="://"].btn.btn-outline-primary {
   }
 }
 
+.media--loading::before {
+  background: $crimson;
+}
+
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
   box-shadow: none;
 }

@@ -19,6 +19,9 @@ a[href*="://"].btn.btn-outline-primary {
     border-color: #f93549;
     color: #f93549; }
 
+.media--loading::before {
+  background: #f93549; }
+
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
   box-shadow: none; }
 
