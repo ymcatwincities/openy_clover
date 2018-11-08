@@ -22,6 +22,10 @@ a[href*="://"].btn.btn-outline-primary {
 .media--loading::before {
   background: #f93549; }
 
+.no-gutter > [class*='col-'] {
+  padding-right: 20px;
+  padding-left: 20px; }
+
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
   box-shadow: none; }
 
@@ -241,7 +245,7 @@ nav .header-content {
 
 .simple-block {
   border-top: 10px solid #f93549;
-  margin: 20px 10px 20px 0; }
+  margin: 20px 0; }
   @media (max-width: 767px) {
     .simple-block {
       margin-bottom: 20px;
