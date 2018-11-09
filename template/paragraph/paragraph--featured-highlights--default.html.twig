@@ -65,7 +65,7 @@
       {% for key, item in content.field_prgf_block_ref_unlim %}
         {% if key matches '/^\\d+$/' %}
           {% if key % columns == 0 %}
-            <div class="row-eq-height">
+            <div class="row-eq-height no-gutter">
           {% endif %}
           <div class="{{ item_class }}">
             {{ item }}
