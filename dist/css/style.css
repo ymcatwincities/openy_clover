@@ -291,6 +291,24 @@ nav .header-content {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+.paragraph--type--simple-content .media {
+  padding-bottom: 0 !important; }
+
+.paragraph--type--simple-content .media--ratio {
+  height: 100%; }
+  @media (min-width: 992px) {
+    .paragraph--type--simple-content .media--ratio {
+      height: 400px; } }
+
+.paragraph--type--simple-content .media--ratio .media__element {
+  position: relative;
+  height: 400px; }
+
+.paragraph--type--simple-content .media-image.media img {
+  object-fit: cover;
+  height: 400px !important;
+  padding: 0; }
+
 .node--type-blog.node--view-mode-teaser {
   margin: auto;
   width: 100%; }
