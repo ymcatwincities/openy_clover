@@ -61,3 +61,27 @@
   padding-top: 20px;
   padding-bottom: 20px
 }
+
+.paragraph--type--simple-content {
+  .media {
+    padding-bottom: 0 !important;
+  }
+
+  .media--ratio {
+    height: 100%;
+    @media (min-width: 992px) {
+      height: 400px;
+    }
+  }
+
+  .media--ratio .media__element {
+    position: relative;
+    height: 400px;
+  }
+
+  .media-image.media img {
+    object-fit: cover;
+    height: 400px !important;
+    padding: 0;
+  }
+}
