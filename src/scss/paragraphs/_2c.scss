@@ -29,15 +29,16 @@
       border-bottom: none;
       text-align: center;
       margin-bottom: 0;
+      letter-spacing: 0;
     }
   }
 
   .field-prgf-description {
-    padding: 10px 0 20px;
+    padding: 10px 0 40px;
     p {
       color: $aubergine;
       text-align: center;
-      font-family:'Roboto';
+      font-family:'Roboto', sans-serif;
       font-size: 18px;
       line-height: 27px;
       margin: 0;
@@ -89,8 +90,10 @@
 
     ul {
       list-style: none;
-      margin-top: 16px;
+      margin-top: 0;
+      font-size: 14px;
       display: inline-grid;
+      padding-left: 15px;
 
       li {
         display: inline-flex;
