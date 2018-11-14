@@ -11,6 +11,8 @@ use Drupal\Core\Database\Database;
 * Implements hook_preprocess_node() for the Blog Content Type.
 */
 function openy_clover_preprocess_node(&$variables) {
+  $variables['is_case_study'] = openy_clover_is_case_study($variables['node']);
+
   if ($variables['node']->getType() == 'blog') {
     $back_link_title = t('Back to News & Events');
     $variables['back_link_title'] = $back_link_title;
@@ -42,4 +44,43 @@ function openy_clover_preprocess_node(&$variables) {
       $variables['next_link'] = Url::fromRoute('entity.node.canonical', ['node' => $array_nid[$current_key + 1]])->toString();
     }
   }
+}
+
+/**
+ * Checks if node is case study.
+ *
+ * @param \Drupal\node\NodeInterface $node
+ *   Node.
+ * @return bool
+ *   True if node is case study.
+ */
+function openy_clover_is_case_study($node) {
+  $bundle = $node->bundle();
+  if ($bundle !== 'landing_page') {
+    return FALSE;
+  }
+
+  if (!$node->hasField('field_content')) {
+    return FALSE;
+  }
+
+  $field_content = $node->get('field_content');
+  if ($field_content->isEmpty()){
+    return FALSE;
+  }
+
+  $manager = Drupal::service('entity_type.manager');
+  $paragraph_storage = $manager->getStorage('paragraph');
+  foreach ($field_content as $field_item) {
+    $value = $field_item->getValue();
+    $revision_id = $value['target_revision_id'];
+    /** @var \Drupal\paragraphs\ParagraphInterface $paragraph */
+    $paragraph = $paragraph_storage->loadRevision($revision_id);
+    $paragraph_bundle = $paragraph->bundle();
+    if ($paragraph_bundle === 'back_to') {
+      return TRUE;
+    }
+  }
+
+  return FALSE;
 }

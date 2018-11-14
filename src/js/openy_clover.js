@@ -31,6 +31,18 @@
     }
   };
 
+
+  Drupal.behaviors.openyHiddenBanner = {
+    attach: function (context, settings) {
+      var sidebar = $('#sidebar');
+      var $target = $('.layout-container');
+      var $body = $('body');
+      if ($body.hasClass('paragraph--type--back-to')) {
+
+      }
+    }
+  };
+
   function matchAllHeight() {
     var el = [
       '.viewport .page-head__main-menu .nav-level-3 > a',

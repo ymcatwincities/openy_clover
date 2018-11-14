@@ -46,7 +46,7 @@
   ]
 %}
 {% set color = '#' ~ content.field_prgf_color['#items'].entity.field_color.value %}
-
+{% if paragraph is not empty %}
 <div{{ attributes.addClass(classes) }} {% if color is not empty %} style="background-color: {{ color }}" {% endif %}>
 
   {% if paragraph.field_prgf_image is not empty %}
@@ -69,4 +69,5 @@
     </div>
   </div>
 </div>
+{% endif %}
 

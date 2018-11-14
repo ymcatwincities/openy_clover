@@ -1,3 +1,23 @@
+.block-description--2.content-with-bg {
+  .block-description--text {
+    h4 {
+      text-transform: none;
+      color: #fff;
+      font-family: 'Quicksand';
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 60px;
+    }
+  }
+  .field-sb-body {
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+}
+
 .block-description--2 {
   margin-bottom: 0;
   padding-top: 20px;

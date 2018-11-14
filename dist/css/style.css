@@ -626,6 +626,21 @@ form {
     .paragraph-1c-wrapper .block-description--text .btn-outline-primary:focus {
       box-shadow: none; }
 
+.block-description--2.content-with-bg .block-description--text h4 {
+  text-transform: none;
+  color: #fff;
+  font-family: 'Quicksand';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px; }
+
+.block-description--2.content-with-bg .field-sb-body {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px; }
+
 .block-description--2 {
   margin-bottom: 0;
   padding-top: 20px;
@@ -951,5 +966,17 @@ form {
   @media (max-width: 767px) {
     .prev-next {
       height: auto; } }
+
+.paragraph--type--back-to {
+  background: #f93549;
+  margin-top: 13px;
+  padding: 12px 0; }
+  .paragraph--type--back-to a {
+    text-align: center;
+    color: #ffff;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px; }
 
 /*# sourceMappingURL=style.css.map */
