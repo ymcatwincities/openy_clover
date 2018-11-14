@@ -259,11 +259,12 @@ nav .header-content {
     color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    font-weight: 700;
     line-height: 27px;
-    width: 100%; }
+    width: 100%;
+    letter-spacing: 1px; }
   .simple-block .block-description--text .block-heading {
-    background: #fff; }
+    background: #fff;
+    border: 1px solid #e5e5e5; }
   .simple-block .block-description--text h4 {
     color: #000;
     font-family: 'Quicksand', sans-serif;
@@ -320,8 +321,8 @@ nav .header-content {
     background-color: transparent;
     border-radius: 0; }
     .node--type-blog.node--view-mode-teaser .inner-wrapper .blog-heading {
+      padding: 0;
       background-color: transparent;
-      padding: 12px 22px;
       position: absolute;
       left: 0;
       top: 0;
@@ -407,14 +408,17 @@ h1.blog-title {
 
 .footer {
   background: #000; }
+  .footer .main-footer {
+    padding-top: 40px;
+    padding-bottom: 40px; }
   .footer ul {
     list-style: none;
     padding: 0; }
     .footer ul li {
-      padding: 10px 0; }
+      padding: 5px 0; }
       .footer ul li a {
         color: #f93549;
-        font-family: Roboto;
+        font-family: 'Roboto';
         font-size: 14px;
         font-weight: 700;
         line-height: 21px; }
@@ -423,7 +427,7 @@ h1.blog-title {
     background-color: #e5e5e5; }
   .footer .footer-copy-links {
     color: #231f20;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 400;
     line-height: 21px; }
@@ -433,7 +437,7 @@ h1.blog-title {
   border-bottom: 1px dashed #95989a;
   margin-bottom: 20px;
   color: #ffffff;
-  font-family: Quicksand;
+  font-family: 'Quicksand';
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -448,7 +452,7 @@ h1.blog-title {
   margin-top: 20px; }
   .blog-more-teaser .all-post a {
     color: #f93549;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -578,53 +582,54 @@ form {
     padding: 15px 40px;
     text-transform: uppercase; }
 
-@media (max-width: 768px) {
-  .paragraph-1c-wrapper {
+.paragraph-1c-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media (max-width: 768px) {
+    .paragraph-1c-wrapper {
+      width: 100%; }
+      .paragraph-1c-wrapper div {
+        padding-left: 0;
+        padding-right: 0; } }
+  .paragraph-1c-wrapper .header-title {
     width: 100%; }
-    .paragraph-1c-wrapper div {
-      padding-left: 0;
-      padding-right: 0; } }
-
-.paragraph-1c-wrapper .header-title {
-  width: 100%; }
-  @media (min-width: 992px) {
-    .paragraph-1c-wrapper .header-title {
-      width: 66%;
-      margin: 0 auto; } }
-
-.paragraph-1c-wrapper .field-prgf-1c-title {
-  color: #f93549;
-  font-family: 'Quicksand';
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 48px;
-  padding-bottom: 10px;
-  text-transform: none; }
-
-.paragraph-1c-wrapper .field-prgf-1c-description {
-  color: #231f20;
-  text-align: center; }
-  .paragraph-1c-wrapper .field-prgf-1c-description p {
-    font-size: 18px;
-    line-height: 27px; }
-
-.paragraph-1c-wrapper .block-description--text {
-  text-align: center; }
-  .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
-    background: #f93549;
-    border: 2px solid #f93549;
-    border-radius: 5px;
-    color: #fff;
+    @media (min-width: 992px) {
+      .paragraph-1c-wrapper .header-title {
+        width: 66%;
+        margin: 0 auto; } }
+  .paragraph-1c-wrapper .field-prgf-1c-title {
+    color: #f93549;
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 20px;
-    font-weight: 700; }
-    .paragraph-1c-wrapper .block-description--text .btn-outline-primary:active {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    padding-bottom: 10px;
+    text-transform: none; }
+  .paragraph-1c-wrapper .field-prgf-1c-description {
+    color: #231f20;
+    text-align: center; }
+    .paragraph-1c-wrapper .field-prgf-1c-description p {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 0;
+      padding-top: 10px; }
+  .paragraph-1c-wrapper .block-description--text {
+    text-align: center; }
+    .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
       background: #f93549;
-      border-color: #f93549; }
-    .paragraph-1c-wrapper .block-description--text .btn-outline-primary:focus {
-      box-shadow: none; }
+      border: 2px solid #f93549;
+      border-radius: 5px;
+      color: #fff;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 20px;
+      font-weight: 700; }
+      .paragraph-1c-wrapper .block-description--text .btn-outline-primary:active {
+        background: #f93549;
+        border-color: #f93549; }
+      .paragraph-1c-wrapper .block-description--text .btn-outline-primary:focus {
+        box-shadow: none; }
 
 .block-description--2.content-with-bg .block-description--text h4 {
   text-transform: none;
@@ -643,8 +648,8 @@ form {
 
 .block-description--2 {
   margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .block-description--2 .prgf-2c-with-border {
     padding: 20px;
     border: 2px solid #e5e5e5;
@@ -665,13 +670,14 @@ form {
     text-transform: none;
     border-bottom: none;
     text-align: center;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    letter-spacing: 0; }
   .block-description--2 .field-prgf-description {
-    padding: 10px 0 20px; }
+    padding: 10px 0 40px; }
     .block-description--2 .field-prgf-description p {
       color: #231f20;
       text-align: center;
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-size: 18px;
       line-height: 27px;
       margin: 0; }
@@ -692,7 +698,7 @@ form {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     line-height: 27px;
-    padding: 20px;
+    padding: 15px 18px;
     display: inline-block;
     width: auto;
     font-weight: 700; }
@@ -703,14 +709,17 @@ form {
       box-shadow: none; }
   .block-description--2 .field-sb-body {
     color: #231f20;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 21px;
-    padding-bottom: 20px; }
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px; }
+    .block-description--2 .field-sb-body p {
+      margin-bottom: 20px;
+      font-size: 14px; }
     .block-description--2 .field-sb-body ul {
       list-style: none;
-      margin-top: 16px;
-      display: inline-grid; }
+      margin-top: 0;
+      font-size: 14px;
+      display: inline-grid;
+      padding-left: 15px; }
       .block-description--2 .field-sb-body ul li {
         display: inline-flex;
         padding-bottom: 10px; }
@@ -753,6 +762,7 @@ form {
         width: 66%;
         margin: 0 auto; } }
   .block-description--3 .media-image.media img {
+    margin-bottom: 20px;
     max-width: 100%;
     height: inherit;
     width: auto; }
@@ -767,6 +777,7 @@ form {
       vertical-align: middle;
       width: auto; }
     .block-description--3 .media-image.media {
+      margin-bottom: 20px;
       position: relative;
       width: 100%;
       height: 270px; } }
@@ -782,13 +793,15 @@ form {
     font-size: 36px;
     font-weight: 500;
     line-height: 48px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-transform: none;
     border-bottom: none;
     text-align: center;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    letter-spacing: 0; }
   .block-description--3 .field-prgf-description {
-    padding: 10px 0 20px; }
+    padding-bottom: 20px; }
     .block-description--3 .field-prgf-description p {
       color: #231f20;
       text-align: center;
@@ -797,8 +810,7 @@ form {
       line-height: 27px;
       margin: 0; }
   .block-description--3 .block-description--text {
-    padding-bottom: 0;
-    padding-top: 20px; }
+    padding: 20px; }
     .block-description--3 .block-description--text h4 {
       border-bottom: none;
       color: #000;
@@ -807,32 +819,39 @@ form {
       font-weight: 700;
       line-height: 36px;
       margin-bottom: 0;
-      padding: 20px 0;
+      padding-bottom: 20px;
       text-transform: uppercase; }
-    .block-description--3 .block-description--text .field-sb-body ul {
-      list-style: none;
-      margin-top: 16px;
-      display: inline-grid; }
-      .block-description--3 .block-description--text .field-sb-body ul li {
-        display: inline-flex;
-        padding-bottom: 10px; }
-        .block-description--3 .block-description--text .field-sb-body ul li strong {
-          display: contents; }
-        .block-description--3 .block-description--text .field-sb-body ul li:before {
-          color: #f93549;
-          content: '\f10c';
-          font-family: 'FontAwesome';
-          font-size: 12px;
-          margin-right: 15px; }
-    .block-description--3 .block-description--text .field-sb-body p {
-      color: #231f20;
-      font-size: 14px;
-      line-height: 21px;
-      font-family: 'Roboto'; }
-    .block-description--3 .block-description--text .field-sb-body a {
-      color: #f93549;
-      font-weight: 700; }
+    .block-description--3 .block-description--text .field-sb-body {
+      padding-bottom: 0; }
+      .block-description--3 .block-description--text .field-sb-body ul {
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 20px;
+        display: inline-grid;
+        padding-left: 15px; }
+        .block-description--3 .block-description--text .field-sb-body ul li {
+          display: inline-flex;
+          padding-bottom: 10px; }
+          .block-description--3 .block-description--text .field-sb-body ul li strong {
+            display: contents; }
+          .block-description--3 .block-description--text .field-sb-body ul li:before {
+            color: #f93549;
+            content: '\f10c';
+            font-family: 'FontAwesome';
+            font-size: 12px;
+            margin-right: 15px; }
+      .block-description--3 .block-description--text .field-sb-body p {
+        color: #231f20;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: 'Roboto'; }
+      .block-description--3 .block-description--text .field-sb-body a {
+        color: #f93549;
+        font-weight: 700; }
     .block-description--3 .block-description--text .btn-outline-primary {
+      text-align: left;
+      margin-top: 20px;
+      white-space: normal;
       background: #f93549;
       border: 2px solid #f93549;
       border-radius: 5px;
@@ -894,7 +913,7 @@ form {
     line-height: 27px;
     margin: 40px 0; }
     .subprogram-listing-item .content .teaser-content {
-      padding: 0 20px;
+      padding: 0;
       position: relative;
       margin: 0 auto; }
       @media (min-width: 992px) {

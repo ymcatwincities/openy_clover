@@ -20,8 +20,8 @@
 
 .block-description--2 {
   margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   .prgf-2c-with-border {
     padding: 20px;
@@ -49,15 +49,16 @@
       border-bottom: none;
       text-align: center;
       margin-bottom: 0;
+      letter-spacing: 0;
     }
   }
 
   .field-prgf-description {
-    padding: 10px 0 20px;
+    padding: 10px 0 40px;
     p {
       color: $aubergine;
       text-align: center;
-      font-family:'Roboto';
+      font-family:'Roboto', sans-serif;
       font-size: 18px;
       line-height: 27px;
       margin: 0;
@@ -84,7 +85,7 @@
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
       line-height: 27px;
-      padding: 20px;
+      padding: 15px 18px;
       display: inline-block;
       width: auto;
       font-weight: 700;
@@ -100,14 +101,19 @@
 
   .field-sb-body {
     color: $aubergine;
-    font-family: 'Roboto';
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     line-height: 21px;
-    padding-bottom: 20px;
+    p {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
     ul {
       list-style: none;
-      margin-top: 16px;
+      margin-top: 0;
+      font-size: 14px;
       display: inline-grid;
+      padding-left: 15px;
 
       li {
         display: inline-flex;

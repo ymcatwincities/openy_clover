@@ -64,4 +64,16 @@
       $(value).matchHeight();
     });
   }
+
+  Drupal.behaviors.openyRemoveIndentComponent = {
+    attach: function (context, settings) {
+      var twoCol = $('.block-description--2');
+      var twoColParent = twoCol.parent().parent();
+      var nextItem = twoColParent.next();
+      if(nextItem.hasClass('subprogram-listing-item')) {
+        twoCol.addClass('pb-0');
+      }
+    }
+  };
+
 })(jQuery);

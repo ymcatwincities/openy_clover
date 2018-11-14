@@ -1,4 +1,6 @@
 .paragraph-1c-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
   @media (max-width: 768px) {
     width: 100%;
     div {
@@ -17,7 +19,7 @@
 
   .field-prgf-1c-title {
     color: $crimson;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-size: 36px;
     font-weight: 500;
     line-height: 48px;
@@ -32,6 +34,8 @@
     p {
       font-size: 18px;
       line-height: 27px;
+      margin-bottom: 0;
+      padding-top: 10px;
     }
   }
 
