@@ -88,7 +88,7 @@
 
 {%
   set sidebar_classes = [
-    'landing-sidebar',
+    'landing-sidebar'
   ]
 %}
 
@@ -105,23 +105,46 @@
 {% endif %}
 
 {% if node.field_lp_layout.value != "one_column_clean" %}
-<div class="container">
+  <nav class="d-lg-none navbar navbar-sidebar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header ml-auto">
+        <button type="button" class="navbar-toggle collapsed  navbar-toggler-right" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
 {% endif %}
 
   {% if content.field_content is not empty %}
     <article{{ attributes.addClass(content_classes) }}>
 
+      <div id="sidebar-2" class="d-flex ml-auto bs-example-navbar-collapse-1 sidebar sidfixed-top collapse fade">
+        <div class="row px-3 px-lg-0">
+          <div class="d-flex w-100 p-3 top-bar">
+            <button class="ml-auto sidebar-toggle" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1"><i class="fa fa-times"
+                                                                                                         aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="h-100 page-head__main-menu text-left sidebar-mobile col-12"></div>
+        </div>
+      </div>
+
       {% if ( node.field_lp_layout.value == "two_column" ) or ( node.field_lp_layout.value == "two_column_fixed" ) %}
       <div class="two-column row">
-        <div class="main-region col-md-7 col-lg-8">
+        <div class="main-region col-md col-lg">
           {% endif %}
           {{ content.field_content }}
           {% if ( node.field_lp_layout.value == "two_column" ) or ( node.field_lp_layout.value == "two_column_fixed" ) %}
         </div>
-        <div class="sidebar-region col-md-5 col-lg-4">
+
+        <div class="sidebar-region col-md-5 col-lg-4 d-none d-lg-block">
           {% endif %}
           <article{{ attributes.addClass(sidebar_classes) }}>
-            {{ content.field_sidebar_content }}
+            <div class="sidebar-desktop">
+              {{ content.field_sidebar_content }}
+            </div>
           </article>
           {% if ( node.field_lp_layout.value == "two_column" ) or ( node.field_lp_layout.value == "two_column_fixed" ) %}
         </div>

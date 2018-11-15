@@ -28,7 +28,12 @@ a[href*="://"].btn.btn-outline-primary {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
+
 
 .container-post {
   max-width: 800px;

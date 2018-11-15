@@ -1,0 +1,85 @@
+.sidebar-mobile,
+.sidebar-desktop {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media (max-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .form-item {
+    margin: 10px 0;
+    .control-label {
+      display: contents;
+    }
+  }
+
+  .form-actions .input-wrapper {
+    text-align: left;
+  }
+
+  .search-block-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .form-search {
+      width: 100%;
+      border: 1px solid #666666;
+    }
+  }
+
+  // Search form.
+  input[type="submit"] {
+    display: block;
+    margin-left: 0;
+  }
+
+  .field-sb-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-family: 'Quicksand';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      a {
+        color: $crimson;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.navbar.navbar-sidebar {
+  background: #e5e5e5;
+  .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg');
+  }
+
+  .navbar-toggle {
+    background: transparent;
+    border: none;
+    padding-right: 0;
+  }
+}
+
+#sidebar-2.sidebar {
+  background: #e5e5e5;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  left: 50%;
+  @media (max-width: 767px) {
+    left: 0;
+  }
+}

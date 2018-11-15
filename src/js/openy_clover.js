@@ -31,15 +31,21 @@
     }
   };
 
-
   Drupal.behaviors.openyHiddenBanner = {
     attach: function (context, settings) {
-      var sidebar = $('#sidebar');
+      var sidebar = $('#sidebar-2');
       var $target = $('.layout-container');
       var $body = $('body');
-      if ($body.hasClass('paragraph--type--back-to')) {
 
-      }
+      sidebar.on('show.bs.collapse', function () {
+        $('<div class="overlay">&nbsp;</div>').prependTo($target);
+        $body.addClass('content-mobile-fixed');
+      });
+
+      sidebar.on('hide.bs.collapse', function () {
+        $('.overlay').remove();
+        $body.removeClass('content-mobile-fixed');
+      });
     }
   };
 
@@ -73,6 +79,19 @@
       if(nextItem.hasClass('subprogram-listing-item')) {
         twoCol.addClass('pb-0');
       }
+    }
+  };
+
+  Drupal.behaviors.openySidebarContent = {
+    attach: function (context, settings) {
+      var sidebar = $('#sidebar-2');
+      sidebar.on('show.bs.collapse', function () {
+        var sidebarDesktop = $('.sidebar-desktop');
+        var sidebarMobile = $('.sidebar-mobile');
+        if (sidebarMobile.is(':empty')) {
+          sidebarDesktop.children().clone().appendTo(sidebarMobile);
+        }
+      });
     }
   };
 
