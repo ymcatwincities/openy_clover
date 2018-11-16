@@ -3,10 +3,22 @@
   width: auto;
 }
 
+.paragraph--view-mode--default {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  h2 {
+    color: #000000;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
 //Blog Featured Posts Teaser
 .featured-posts-teaser {
   border-top: 10px solid #f93549;
-  margin: 20px 0;
 
   h4 {
     margin: 20px 20px 10px;
@@ -58,7 +70,7 @@
 }
 
 //Blog Posts Big Teaser
-.paragraph--type--latest-blog-posts-big-teaser {
+.node--view-mode-big-teaser {
   h2 {
     font-family: 'Quicksand';
     font-size: 24px;

@@ -1,7 +1,5 @@
 .sidebar-mobile,
 .sidebar-desktop {
-  padding-top: 20px;
-  padding-bottom: 20px;
   @media (max-width: 992px) {
     padding-top: 0;
     padding-bottom: 0;
@@ -15,8 +13,6 @@
   }
 
   .search-block-form {
-    padding-top: 20px;
-    padding-bottom: 20px;
     .form-search {
       width: 100%;
       border: 1px solid #666666;
