@@ -313,6 +313,37 @@ nav .header-content {
   height: 400px !important;
   padding: 0; }
 
+.paragraph--type--latest-blog-posts-big-teaser h2 {
+  font-family: 'Quicksand';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 20px; }
+
+.paragraph--type--latest-blog-posts-big-teaser .blog-heading {
+  margin-bottom: 20px; }
+  .paragraph--type--latest-blog-posts-big-teaser .blog-heading h4 {
+    color: #f93549;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px; }
+  .paragraph--type--latest-blog-posts-big-teaser .blog-heading p {
+    margin-bottom: 10px; }
+    @media (max-width: 992px) {
+      .paragraph--type--latest-blog-posts-big-teaser .blog-heading p {
+        display: none; } }
+  .paragraph--type--latest-blog-posts-big-teaser .blog-heading .block-category-tag {
+    color: #636466;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: italic;
+    line-height: 21px; }
+    .paragraph--type--latest-blog-posts-big-teaser .blog-heading .block-category-tag a {
+      color: inherit; }
+
 .node--type-blog.node--view-mode-teaser {
   margin: auto;
   width: 100%; }
@@ -535,9 +566,6 @@ h1.blog-title {
   .sidebar-mobile .form-item,
   .sidebar-desktop .form-item {
     margin: 10px 0; }
-    .sidebar-mobile .form-item .control-label,
-    .sidebar-desktop .form-item .control-label {
-      display: contents; }
   .sidebar-mobile .form-actions .input-wrapper,
   .sidebar-desktop .form-actions .input-wrapper {
     text-align: left; }

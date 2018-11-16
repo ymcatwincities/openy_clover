@@ -1,4 +1,46 @@
-// teaser
+//Blog Posts Big Teaser
+.paragraph--type--latest-blog-posts-big-teaser {
+  h2 {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .blog-heading {
+    margin-bottom: 20px;
+    h4 {
+      color: $crimson;
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+    
+    .block-category-tag {
+      color: #636466;
+      font-family: 'Roboto';
+      font-size: 14px;
+      font-style: italic;
+      line-height: 21px;
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+// Teaser
 .node--type-blog.node--view-mode-teaser {
   margin: auto;
   width: 100%;

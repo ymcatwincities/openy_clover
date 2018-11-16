@@ -68,92 +68,47 @@
 #}
 
 {%
-  set header_classes = [
-    'landing-header',
-    'w-100',
-    node.field_lp_layout.value|clean_class,
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
 
-{%
-  set header_content_classes = ['content']
-%}
+<article{{ attributes.addClass(classes) }}>
+  <div
+    class="row inner-wrapper">
 
-{%
-  set content_classes = [
-    'landing-content',
-    node.field_lp_layout.value|clean_class,
-  ]
-%}
+    {% if (node.field_blog_style.value == "photo") %}
+      <div>
+        {{ content.field_blog_image }}
+      </div>
+    {% endif %}
 
-{%
-  set sidebar_classes = [
-    'landing-sidebar'
-  ]
-%}
+    <div class="col-4 pb-3">
+      {{ content.field_blog_image }}
+    </div>
 
-{# camp landing pages need both banner & header content outputted #}
-{% if '/camps/' in path('entity.node.canonical', {'node': node.id}) %}
-  {% include '@openy_carnation/node/include/header-default--camp.html.twig' %}
-{% else %}
-  {# default header #}
-  {% include '@openy_clover/node/include/header-default.html.twig' %}
-{% endif %}
-
-{% if node.field_lp_layout.value == "two_column_fixed" %}
-  {{ attach_library('openy_rose/landing') }}
-{% endif %}
-
-{% if node.field_lp_layout.value != "one_column_clean" %}
-  <nav class="d-lg-none navbar navbar-sidebar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header ml-auto">
-        <button type="button" class="navbar-toggle collapsed  navbar-toggler-right" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="col-8">
+      <div class="blog-heading">
+        {% if (node.field_blog_style.value == "story") %}
+          <div class="story-card">
+            <div class="quote">
+              <i class="icon"></i>
+            </div>
+          </div>
+        {% endif %}
+        <h4>
+          <a href="{{ url }}" rel="bookmark">
+            {{ label }}
+          </a>
+        </h4>
+        {{ content.field_blog_description }}
+        <div class="block-category-tag d-flex d-inline-block">{{ content.field_blog_category }} <span>&nbsp;+&nbsp;</span> {{ content.field_blog_tags }}</div>
       </div>
     </div>
-  </nav>
-  <div class="container-fluid">
-{% endif %}
-
-  {% if content.field_content is not empty %}
-    <article{{ attributes.addClass(content_classes) }}>
-
-      <div id="sidebar-2" class="d-flex ml-auto bs-example-navbar-collapse-1 sidebar sidfixed-top collapse fade">
-        <div class="row px-3 px-lg-0">
-          <div class="d-flex w-100 p-3 top-bar">
-            <button class="ml-auto sidebar-toggle" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1"><i class="fa fa-times"
-                                                                                                         aria-hidden="true"></i>
-            </button>
-          </div>
-          <div class="h-100 page-head__main-menu text-left sidebar-mobile col-12"></div>
-        </div>
-      </div>
-
-      {% if ( node.field_lp_layout.value == "two_column" ) or ( node.field_lp_layout.value == "two_column_fixed" ) %}
-      <div class="two-column row">
-        <div class="main-region col-md col-lg">
-          {% endif %}
-          {{ content.field_content }}
-          {% if ( node.field_lp_layout.value == "two_column" ) or ( node.field_lp_layout.value == "two_column_fixed" ) %}
-        </div>
-
-        <div class="sidebar-region col-md-5 col-lg-3 d-none d-lg-block">
-          {% endif %}
-          <article{{ attributes.addClass(sidebar_classes) }}>
-            <div class="sidebar-desktop">
-              {{ content.field_sidebar_content }}
-            </div>
-          </article>
-          {% if ( node.field_lp_layout.value == "two_column" ) or ( node.field_lp_layout.value == "two_column_fixed" ) %}
-        </div>
-      </div>
-      {% endif %}
-
-    </article>
-  {% endif %}
-
-{% if node.field_lp_layout.value != "one_column_clean" %}
-</div>
-{% endif %}
+  </div>
+</article>
