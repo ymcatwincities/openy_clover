@@ -331,6 +331,9 @@ nav .header-content {
 
 .featured-posts-teaser {
   border-top: 10px solid #f93549; }
+  @media (max-width: 767px) {
+    .featured-posts-teaser {
+      margin-bottom: 10px; } }
   .featured-posts-teaser h4 {
     margin: 20px 20px 10px; }
     .featured-posts-teaser h4 a {
