@@ -248,6 +248,9 @@ nav .header-content {
 
 .viewport {
   margin-top: 74px; }
+  @media (max-width: 992px) {
+    .viewport {
+      margin-top: 22px; } }
 
 .simple-block {
   border-top: 10px solid #f93549;
