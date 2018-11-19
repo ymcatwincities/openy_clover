@@ -104,7 +104,7 @@
         </h1>
       {% endif %}
       <div class="text-center blog-tags-link font-italic d-flex d-inline-block">
-        <div class="m-auto d-flex">{{ content.field_blog_category }} <span>&nbsp;+&nbsp;</span> {{ content.field_blog_tags }}</div>
+        <div class="m-auto d-flex">{{ content.field_blog_category }} <span>&nbsp;+&nbsp;</span> <div>{{ content.field_blog_tags }}</div></div>
       </div>
 
       <article{{ attributes.addClass(classes) }}>
