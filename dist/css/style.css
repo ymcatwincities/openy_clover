@@ -481,11 +481,13 @@ h1.blog-title {
     font-weight: 700;
     line-height: 21px; }
 
-.blog-tags-link a {
-  color: #f93549;
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 21px; }
+.blog-tags-link {
+  padding-bottom: 20px; }
+  .blog-tags-link a {
+    color: #f93549;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 21px; }
 
 .pre-footer {
   background-color: #f93549;
