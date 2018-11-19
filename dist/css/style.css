@@ -246,6 +246,9 @@ nav .header-content {
     .content {
       padding-top: 70px; } }
 
+.viewport {
+  margin-top: 74px; }
+
 .simple-block {
   border-top: 10px solid #f93549;
   margin: 20px 0; }

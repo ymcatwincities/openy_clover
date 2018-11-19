@@ -46,6 +46,11 @@ function openy_clover_preprocess_node(&$variables) {
   }
 }
 
+
+function openy_clover_preprocess_views_view_unformatted(&$variables) {
+  $variables['back_link_path'] = Url::fromUri('internal:/news_events')->toString();
+}
+
 /**
  * Checks if node is case study.
  *
