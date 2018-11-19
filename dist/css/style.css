@@ -246,12 +246,6 @@ nav .header-content {
     .content {
       padding-top: 70px; } }
 
-.viewport {
-  margin-top: 74px; }
-  @media (max-width: 992px) {
-    .viewport {
-      margin-top: 22px; } }
-
 .simple-block {
   border-top: 10px solid #f93549;
   margin: 20px 0; }
@@ -443,7 +437,11 @@ nav .header-content {
       font-weight: 700; }
 
 .back-to-blog {
+  margin-top: 74px;
   background: #f93549; }
+  @media (max-width: 992px) {
+    .back-to-blog {
+      margin-top: 22px; } }
   .back-to-blog a {
     color: #ffffff;
     font-family: 'Quicksand';
