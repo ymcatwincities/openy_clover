@@ -2,7 +2,6 @@ a[href*="://"].btn.btn-outline-primary {
   background: $white;
   border: 2px solid #f93549;
   color: $crimson;
-
   &:active {
     background: $white;
     border-color: $crimson;
@@ -15,8 +14,8 @@ a[href*="://"].btn.btn-outline-primary {
 }
 
 .no-gutter > [class*='col-'] {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
@@ -24,22 +23,20 @@ a[href*="://"].btn.btn-outline-primary {
 }
 
 .container-fluid {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1200px;
-  padding-left: 20px;
   padding-right: 20px;
-
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
   .container-fluid {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
-
 .container-post {
-  margin: 0 auto;
   max-width: 800px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -59,21 +56,21 @@ a[href*="://"].btn.btn-outline-primary {
 
 footer .container {
   max-width: 1200px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .navbar-brand {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  box-sizing: content-box;
+  margin: 0 0 5px 0;
+  padding: 0;
+  width: 221px;
+  height: 69%;
   background: url(../../img/logo-full.svg) no-repeat;
   background-size: contain;
-  box-sizing: content-box;
-  display: block;
-  height: 69%;
-  margin: 0 0 5px 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 221px;
 }
 
 @media (max-width: 991px) {
@@ -83,15 +80,13 @@ footer .container {
   }
 }
 
-.viewport .nav-global,
-.nav-global {
-  border: 0;
+.viewport .nav-global, .nav-global {
+  border: none;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .page-head__top-menu {
-  background-color: $light-grey;
-
+  background-color: #e5e5e5;
   nav ul {
     list-style: none;
     margin: 12px 0;
@@ -101,7 +96,7 @@ footer .container {
       display: inline;
       padding: 0 20px;
       a {
-        color: $black;
+        color: #000;
         font-family: 'Quicksand', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -112,22 +107,21 @@ footer .container {
 }
 
 nav .header-content {
-  background: $black;
+  background: #000;
 }
 
 .page-head__main-menu .navbar {
   li {
     padding-left: 20px;
     padding-right: 20px;
-
     a, button {
-      color: $white;
+      color: #ffffff;
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 27px;
-      padding: 30px 0;
       text-transform: uppercase;
+      padding: 30px 0;
     }
 
     a:hover {
@@ -138,13 +132,12 @@ nav .header-content {
   .btn-primary-menu {
     background: $crimson;
     border-color: $crimson;
-    color: $white;
+    color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-transform: uppercase;
-
     &:active {
       background: $crimson;
     }
@@ -156,7 +149,6 @@ nav .header-content {
     @media (min-width: 992px) {
       padding: 30px 0;
     }
-
     img {
       width: auto;
       @media (max-width: 992px) {
@@ -169,11 +161,10 @@ nav .header-content {
 //Mobile menu
 
 .sidebar {
-  background: $black;
+  background: #000;
   position: fixed;
   top: 0;
   z-index: 2000;
-
   .page-head__main-menu {
     margin-bottom: 80px;
   }
@@ -186,10 +177,9 @@ nav .header-content {
 
   nav li {
     a {
-      color: $white;
+      color: #fff;
       font-family: 'Quicksand', sans-serif;
       line-height: 27px;
-
       &:hover {
         color: $crimson;
       }
@@ -199,13 +189,12 @@ nav .header-content {
   .btn-primary-menu {
     background: $crimson;
     border-color: $crimson;
-    color: $white;
+    color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
     width: 90%;
-
     &:hover {
       background: $crimson !important;
       color: $white;
@@ -215,17 +204,14 @@ nav .header-content {
 
 .sidebar.collapse.show {
   width: 50%;
-
   @media (max-width: 767px) {
     width: 100%;
   }
 }
 
 .top-bar {
-  background-color: $light-grey;
-
-  .home-icon,
-  .fa-times {
+  background-color: #e5e5e5;
+  .home-icon, .fa-times {
     color: $crimson;
     font-size: 26px;
   }
@@ -238,32 +224,31 @@ nav .header-content {
 
 .without-banner {
   .top-navs {
-    background-color: $black;
+    background-color: #000;
   }
-
   .top-navs.menu-in,
   .top-navs.affix,
   .top-navs.affix.menu-in {
-    background: $black;
+    background: #000;
   }
 }
 
 @media (max-width: 992px) {
   .without-banner .viewport {
-    margin-top:  70px;
+    margin-top: 70px;
   }
 }
 
 .with-banner {
   .layout-container {
     .top-navs {
-      background-color: $black;
+      background-color: #000;
     }
 
     .top-navs.menu-in,
     .top-navs.affix,
     .top-navs.affix.menu-in {
-      background: $black;
+      background: #000;
     }
   }
 }
@@ -278,27 +263,25 @@ nav .header-content {
 }
 
 .mobile-secondary-menu {
-  background-color: $light-grey;
+  background-color: #e5e5e5;
   height: auto;
   left: 50%;
   @media (max-width: 767px) {
     left: 0;
   }
-
   nav ul {
-    display: inline-block;
+    padding: 0 20px;
     list-style: none;
     margin-bottom: 0;
-    padding: 0 20px;
     text-align: center;
+    display: inline-block;
 
     li {
       float: left;
-      padding: 10px;
       width: 50%;
-
+      padding: 10px;
       a {
-        color: $black;
+        color: #000;
         font-family: 'Quicksand', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -309,20 +292,19 @@ nav .header-content {
 }
 
 .overlay {
-  background-color: $black;
+  background-color: #000;
   height: 100%;
   opacity: 0.7;
   position: absolute;
   top: 0;
-  width: 100%;
   z-index: 2000;
+  width: 100%;
 }
 
 .content-mobile-fixed {
   height: 100%;
   overflow: hidden;
 }
-
 
 .content {
   padding-top: 169px;
