@@ -1044,14 +1044,9 @@ form {
   position: relative; }
   .subprogram-listing-item .banner-bg {
     background-size: cover;
-    filter: blur(2px);
-    -ms-filter: blur(2px);
-    -webkit-filter: blur(2px);
     height: 100%;
     position: absolute;
-    width: 100%;
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px); }
+    width: 100%; }
   .subprogram-listing-item .teaser-box-content {
     background: #000;
     border: 2px solid #fff;
