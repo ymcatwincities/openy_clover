@@ -34,13 +34,13 @@ a[href*="://"].btn.btn-outline-primary {
   }
 }
 
-
 .container-post {
   max-width: 800px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .viewport {
   main .layout-content {
     margin-bottom: 0 !important;
@@ -53,6 +53,7 @@ a[href*="://"].btn.btn-outline-primary {
     margin-top: 168px;
   }
 }
+
 footer .container {
   max-width: 1200px;
   padding-right: 20px;
@@ -79,12 +80,10 @@ footer .container {
   }
 }
 
-
 .viewport .nav-global, .nav-global {
   border: none;
-  box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
 .page-head__top-menu {
   background-color: #e5e5e5;
@@ -236,7 +235,7 @@ nav .header-content {
 
 @media (max-width: 992px) {
   .without-banner .viewport {
-    margin-top:  70px;
+    margin-top: 70px;
   }
 }
 
@@ -306,7 +305,6 @@ nav .header-content {
   height: 100%;
   overflow: hidden;
 }
-
 
 .content {
   padding-top: 169px;
