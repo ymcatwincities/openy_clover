@@ -1,32 +1,39 @@
-.views-view-grid .views-row {
-  float: none;
-  width: auto;
+.latest-blog-featured-posts {
+  .views-view-grid {
+    .views-row {
+      float: none;
+      width: auto;
+    }
+  }
 }
 
 .paragraph--view-mode--default {
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
+
   h2 {
-    color: #000000;
+    color: $black;
     font-family: Quicksand;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
-    text-transform: uppercase;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 }
+
 //Blog Featured Posts Teaser
 .featured-posts-teaser {
-  border-top: 10px solid #f93549;
+  border-top: 10px solid $crimson;
   @media (max-width: 767px) {
     margin-bottom: 10px;
   }
 
   h4 {
     margin: 20px 20px 10px;
+
     a {
-      color: #000;
+      color: $black;
       font-family: 'Quicksand',sans-serif;
       font-size: 24px;
       line-height: 36px;
@@ -37,26 +44,27 @@
 
   .block-category-tag {
     padding: 0 20px 20px;
+
     h6 {
-      margin-bottom: 0;
       font-size: 14px;
+      margin-bottom: 0;
     }
   }
 
   .blog-heading {
-    border: 1px solid #e5e5e5;
+    border: 1px solid $light-grey;
   }
 
   .btn-outline-primary {
-    background: #f93549;
-    border-color: #f93549;
+    background: $crimson;
+    border-color: $crimson;
     border-radius: 0 0 10px 10px;
-    color: #fff;
+    color: $white;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
+    letter-spacing: 1px;
     line-height: 27px;
     width: 100%;
-    letter-spacing: 1px;
   }
 
 
@@ -66,6 +74,7 @@
     font-size: 14px;
     font-style: italic;
     line-height: 21px;
+
     a {
       color: inherit;
     }
@@ -74,18 +83,20 @@
 
 //Blog Posts Big Teaser
 .node--view-mode-big-teaser {
+
   h2 {
+    color: $black;
     font-family: 'Quicksand';
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
-    text-transform: uppercase;
-    color: #000;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   .blog-heading {
     margin-bottom: 20px;
+
     h4 {
       color: $crimson;
       font-family: 'Roboto', sans-serif;
@@ -120,22 +131,22 @@
   width: 100%;
 
   .inner-wrapper {
-    margin: 0 -15px 20px;
-    position: relative;
-    overflow: hidden;
-    height: auto;
     background-color: transparent;
     border-radius: 0;
+    height: auto;
+    margin: 0 -15px 20px;
+    overflow: hidden;
+    position: relative;
 
     .blog-heading {
-      padding: 0;
       background-color: transparent;
-      position: absolute;
-      left: 0;
-      top: 0;
       bottom: 0;
-      width: 100%;
+      left: 0;
+      padding: 0;
+      position: absolute;
       text-align: left;
+      top: 0;
+      width: 100%;
     }
 
     img {
@@ -143,7 +154,7 @@
     }
 
     p {
-      color: #ffffff;
+      color: $white;
       font-family: Roboto;
       font-size: 14px;
       font-weight: 400;
@@ -167,16 +178,18 @@
 
 .back-to-blog {
   background: $crimson;
+
   a {
-    color: #ffffff;
+    color: $white;
     font-family: 'Quicksand';
     font-size: 14px;
     font-weight: 500;
     line-height: 27px;
   }
 }
+
 h1.blog-title {
-  color: #000000;
+  color: $black;
   font-family: 'Quicksand';
   font-size: 48px;
   font-weight: 500;
@@ -189,6 +202,7 @@ h1.blog-title {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+
   a {
     color: $crimson;
   }
@@ -200,6 +214,7 @@ h1.blog-title {
     width: 360px;
     padding-left: 20px;
   }
+
   img {
     border-radius: 0;
     padding-bottom: 20px;
@@ -208,18 +223,20 @@ h1.blog-title {
 
 .prev-next-block-post {
   border-top: 1px solid #707070;
+
   a {
     color: $crimson;
-    text-decoration: underline;
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+    text-decoration: underline;
   }
 }
 
 .blog-tags-link {
   padding-bottom: 20px;
+
   a {
     color: $crimson;
     font-family: 'Roboto';

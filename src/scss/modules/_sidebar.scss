@@ -1,9 +1,10 @@
 .sidebar-mobile,
 .sidebar-desktop {
   @media (max-width: 992px) {
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
   }
+
   .form-item {
     margin: 10px 0;
   }
@@ -14,8 +15,8 @@
 
   .search-block-form {
     .form-search {
+      border: 1px solid #666;
       width: 100%;
-      border: 1px solid #666666;
     }
   }
 
@@ -26,22 +27,26 @@
   }
 
   .field-sb-body {
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
+
   h3 {
-    margin-bottom: 20px;
     font-family: 'Quicksand';
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
+    margin-bottom: 20px;
     text-transform: uppercase;
   }
 
   ul {
     padding-left: 0;
+
     li {
+
       list-style: none;
+
       a {
         color: $crimson;
         font-family: 'Roboto';
@@ -54,7 +59,8 @@
 }
 
 .navbar.navbar-sidebar {
-  background: #e5e5e5;
+  background: $light-grey;
+
   .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg');
   }
@@ -67,11 +73,11 @@
 }
 
 #sidebar-2.sidebar {
-  background: #e5e5e5;
+  background: $light-grey;
+  left: 50%;
   position: fixed;
   top: 0;
   z-index: 2000;
-  left: 50%;
   @media (max-width: 767px) {
     left: 0;
   }

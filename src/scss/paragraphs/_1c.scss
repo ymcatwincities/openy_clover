@@ -1,8 +1,9 @@
 .paragraph-1c-wrapper {
-  padding-top: 40px;
   padding-bottom: 40px;
+  padding-top: 40px;
   @media (max-width: 768px) {
     width: 100%;
+
     div {
       padding-left: 0;
       padding-right: 0;
@@ -12,8 +13,8 @@
   .header-title {
     width: 100%;
     @media (min-width: 992px) {
-      width: 66%;
       margin: 0 auto;
+      width: 66%;
     }
   }
 
@@ -49,13 +50,15 @@
       color: $white;
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
+      font-weight: 700;
       line-height: 27px;
       padding: 20px;
-      font-weight: 700;
+
       &:active {
         background: $crimson;
         border-color: $crimson;
       }
+
       &:focus {
         box-shadow: none;
       }

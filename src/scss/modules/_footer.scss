@@ -2,9 +2,10 @@
   background-color: $crimson;
   padding: 20px;
   text-align: center;
+
   .field-sb-body {
     i {
-      color: #fff;
+      color: $white;
       font-size: 2em;
       margin-right: 15px;
     }
@@ -12,20 +13,22 @@
 }
 
 .footer {
-  background: #000;
+  background: $black;
 
   .main-footer {
-    padding-top: 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   ul {
     list-style: none;
     padding: 0;
+
     li {
       padding: 5px 0;
+
       a {
-        color: #f93549;
+        color: $crimson;
         font-family: 'Roboto';
         font-size: 14px;
         font-weight: 700;
@@ -35,12 +38,12 @@
   }
 
   .footer__copyright {
+    background-color: $light-grey;
     text-align: center;
-    background-color: #e5e5e5;
   }
 
   .footer-copy-links {
-    color: #231f20;
+    color: $aubergine;
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 400;
@@ -52,30 +55,28 @@
 #block-sitemap {
   h2 {
     border-bottom: 1px dashed #95989a;
-    margin-bottom: 20px;
-    color: #ffffff;
+    color: $white;
     font-family: 'Quicksand';
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    text-transform: uppercase;
-    text-align: center;
+    margin-bottom: 20px;
     padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .blog-more-teaser {
-  .posts {
-  }
-
   .all-post {
     border-top: 1px dashed #95989a;
+    margin-top: 20px;
     padding-top: 20px;
     text-align: center;
-    margin-top: 20px;
+
     a {
-      color: #f93549;
-      font-family:'Roboto';
+      color: $crimson;
+      font-family: 'Roboto';
       font-size: 14px;
       font-weight: 700;
       line-height: 21px;

@@ -2,6 +2,7 @@ a[href*="://"].btn.btn-outline-primary {
   background: $white;
   border: 2px solid #f93549;
   color: $crimson;
+
   &:active {
     background: $white;
     border-color: $crimson;
@@ -14,8 +15,8 @@ a[href*="://"].btn.btn-outline-primary {
 }
 
 .no-gutter > [class*='col-'] {
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
@@ -23,24 +24,26 @@ a[href*="://"].btn.btn-outline-primary {
 }
 
 .container-fluid {
-  max-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   .container-fluid {
-    padding-right: 0;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
 
 .container-post {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .viewport {
   main .layout-content {
     margin-bottom: 0 !important;
@@ -53,23 +56,24 @@ a[href*="://"].btn.btn-outline-primary {
     margin-top: 168px;
   }
 }
+
 footer .container {
   max-width: 1200px;
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navbar-brand {
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  box-sizing: content-box;
-  margin: 0 0 5px 0;
-  padding: 0;
-  width: 221px;
-  height: 69%;
   background: url(../../img/logo-full.svg) no-repeat;
   background-size: contain;
+  box-sizing: content-box;
+  display: block;
+  height: 69%;
+  margin: 0 0 5px 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 221px;
 }
 
 @media (max-width: 991px) {
@@ -79,15 +83,15 @@ footer .container {
   }
 }
 
-
-.viewport .nav-global, .nav-global {
-  border: none;
-  box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+.viewport .nav-global,
+.nav-global {
+  border: 0;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-
 .page-head__top-menu {
-  background-color: #e5e5e5;
+  background-color: $light-grey;
+
   nav ul {
     list-style: none;
     margin: 12px 0;
@@ -97,7 +101,7 @@ footer .container {
       display: inline;
       padding: 0 20px;
       a {
-        color: #000;
+        color: $black;
         font-family: 'Quicksand', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -108,21 +112,22 @@ footer .container {
 }
 
 nav .header-content {
-  background: #000;
+  background: $black;
 }
 
 .page-head__main-menu .navbar {
   li {
     padding-left: 20px;
     padding-right: 20px;
+
     a, button {
-      color: #ffffff;
+      color: $white;
       font-family: 'Quicksand', sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 27px;
-      text-transform: uppercase;
       padding: 30px 0;
+      text-transform: uppercase;
     }
 
     a:hover {
@@ -133,12 +138,13 @@ nav .header-content {
   .btn-primary-menu {
     background: $crimson;
     border-color: $crimson;
-    color: #fff;
+    color: $white;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-transform: uppercase;
+
     &:active {
       background: $crimson;
     }
@@ -150,6 +156,7 @@ nav .header-content {
     @media (min-width: 992px) {
       padding: 30px 0;
     }
+
     img {
       width: auto;
       @media (max-width: 992px) {
@@ -162,10 +169,11 @@ nav .header-content {
 //Mobile menu
 
 .sidebar {
-  background: #000;
+  background: $black;
   position: fixed;
   top: 0;
   z-index: 2000;
+
   .page-head__main-menu {
     margin-bottom: 80px;
   }
@@ -178,9 +186,10 @@ nav .header-content {
 
   nav li {
     a {
-      color: #fff;
+      color: $white;
       font-family: 'Quicksand', sans-serif;
       line-height: 27px;
+
       &:hover {
         color: $crimson;
       }
@@ -190,12 +199,13 @@ nav .header-content {
   .btn-primary-menu {
     background: $crimson;
     border-color: $crimson;
-    color: #fff;
+    color: $white;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
     width: 90%;
+
     &:hover {
       background: $crimson !important;
       color: $white;
@@ -205,14 +215,17 @@ nav .header-content {
 
 .sidebar.collapse.show {
   width: 50%;
+
   @media (max-width: 767px) {
     width: 100%;
   }
 }
 
 .top-bar {
-  background-color: #e5e5e5;
-  .home-icon, .fa-times {
+  background-color: $light-grey;
+
+  .home-icon,
+  .fa-times {
     color: $crimson;
     font-size: 26px;
   }
@@ -225,12 +238,13 @@ nav .header-content {
 
 .without-banner {
   .top-navs {
-    background-color: #000;
+    background-color: $black;
   }
+
   .top-navs.menu-in,
   .top-navs.affix,
   .top-navs.affix.menu-in {
-    background: #000;
+    background: $black;
   }
 }
 
@@ -243,13 +257,13 @@ nav .header-content {
 .with-banner {
   .layout-container {
     .top-navs {
-      background-color: #000;
+      background-color: $black;
     }
 
     .top-navs.menu-in,
     .top-navs.affix,
     .top-navs.affix.menu-in {
-      background: #000;
+      background: $black;
     }
   }
 }
@@ -264,25 +278,27 @@ nav .header-content {
 }
 
 .mobile-secondary-menu {
-  background-color: #e5e5e5;
+  background-color: $light-grey;
   height: auto;
   left: 50%;
   @media (max-width: 767px) {
     left: 0;
   }
+
   nav ul {
-    padding: 0 20px;
+    display: inline-block;
     list-style: none;
     margin-bottom: 0;
+    padding: 0 20px;
     text-align: center;
-    display: inline-block;
 
     li {
       float: left;
-      width: 50%;
       padding: 10px;
+      width: 50%;
+
       a {
-        color: #000;
+        color: $black;
         font-family: 'Quicksand', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -293,13 +309,13 @@ nav .header-content {
 }
 
 .overlay {
-  background-color: #000;
+  background-color: $black;
   height: 100%;
   opacity: 0.7;
   position: absolute;
   top: 0;
-  z-index: 2000;
   width: 100%;
+  z-index: 2000;
 }
 
 .content-mobile-fixed {

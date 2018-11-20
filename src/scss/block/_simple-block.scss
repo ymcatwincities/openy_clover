@@ -17,15 +17,15 @@
     color: $white;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
+    letter-spacing: 1px;
     line-height: 27px;
     width: 100%;
-    letter-spacing: 1px;
   }
 
   .block-description--text {
     .block-heading {
       background: $white;
-      border: 1px solid #e5e5e5;
+      border: 1px solid $light-grey;
     }
 
     h4 {
@@ -40,6 +40,7 @@
 
     .field-sb-body {
       padding: 10px 20px 20px;
+
       p {
         font-family: 'Roboto';
         font-size: 14px;
@@ -50,17 +51,18 @@
 }
 
 .media-image.media img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
   width: 100%;
 }
+
 .row-eq-height {
   width: 100%;
 }
 
 .featured-highlights {
+  padding-bottom: 20px;
   padding-top: 20px;
-  padding-bottom: 20px
 }
 
 .paragraph--type--simple-content {
@@ -76,13 +78,13 @@
   }
 
   .media--ratio .media__element {
-    position: relative;
     height: 400px;
+    position: relative;
   }
 
   .media-image.media img {
-    object-fit: cover;
     height: 400px !important;
+    object-fit: cover;
     padding: 0;
   }
 }
