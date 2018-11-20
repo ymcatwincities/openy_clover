@@ -81,6 +81,23 @@ form {
       line-height: 27px;
       padding: 15px 40px;
       text-transform: uppercase;
+
+
+      &:active {
+        background: $crimson;
+        border-color: $crimson;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: none;
+        background: $crimson;
+        border-color: $crimson;
+        color: $white;
+      }
     }
   }
 }

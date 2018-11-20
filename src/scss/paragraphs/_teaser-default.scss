@@ -95,5 +95,11 @@
       box-shadow: none;
     }
 
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+      background: $crimson;
+      border-color: $crimson;
+      color: $white;
+    }
   }
 }

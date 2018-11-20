@@ -122,7 +122,12 @@ nav .header-content {
   line-height: 27px;
   text-transform: uppercase; }
   .page-head__main-menu .navbar .btn-primary-menu:active {
-    background: #f93549; }
+    background: #f93549;
+    border-color: #f93549; }
+  .page-head__main-menu .navbar .btn-primary-menu:focus {
+    box-shadow: none; }
+  .page-head__main-menu .navbar .btn-primary-menu:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
 
 @media (min-width: 992px) {
   .layout-container .top-navs .logo {
@@ -265,6 +270,16 @@ nav .header-content {
     letter-spacing: 1px;
     line-height: 27px;
     width: 100%; }
+    .simple-block .btn-outline-primary:active {
+      background: #f93549;
+      border-color: #f93549; }
+    .simple-block .btn-outline-primary:focus {
+      box-shadow: none; }
+    .simple-block .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+      background: #f93549;
+      border-color: #f93549;
+      color: #fff; }
   .simple-block .block-description--text .block-heading {
     background: #fff;
     border: 1px solid #e5e5e5; }
@@ -748,6 +763,16 @@ form {
     line-height: 27px;
     padding: 15px 40px;
     text-transform: uppercase; }
+    .form-actions .input-wrapper .form-submit:active {
+      background: #f93549;
+      border-color: #f93549; }
+    .form-actions .input-wrapper .form-submit:focus {
+      box-shadow: none; }
+    .form-actions .input-wrapper .form-submit:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+      background: #f93549;
+      border-color: #f93549;
+      color: #fff; }
 
 .paragraph-1c-wrapper {
   padding-bottom: 40px;
@@ -1110,6 +1135,11 @@ form {
       border-color: #f93549; }
     .subprogram-listing-item .btn-outline-primary:focus {
       box-shadow: none; }
+    .subprogram-listing-item .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+      background: #f93549;
+      border-color: #f93549;
+      color: #fff; }
 
 .block-prev {
   bottom: 50%;

@@ -20,6 +20,22 @@
     letter-spacing: 1px;
     line-height: 27px;
     width: 100%;
+
+    &:active {
+      background: $crimson;
+      border-color: $crimson;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+      background: $crimson;
+      border-color: $crimson;
+      color: $white;
+    }
   }
 
   .block-description--text {
