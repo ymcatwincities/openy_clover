@@ -107,17 +107,14 @@ form {
   .exposed-form-flex-wrapper {
     padding-bottom: 0;
     padding-top: 0;
-    .form-flex {
-      flex-wrap: wrap;
-      width: 100%;
-    }
 
     input {
       width: 100% !important;
     }
 
     .form-item {
-      flex: 0 0 100%;
+      margin-right: auto;
+      margin-top: 0;
     }
 
     .form-actions {
@@ -146,18 +143,13 @@ form {
     }
   }
 
-  input {
-    width: 100% !important;
-  }
-
   .form-item {
-    margin-top: 0;
-    margin-left: 0;
+    margin: 1em 0;
     width: 100%;
   }
 
   .form-actions {
-    margin-top: auto;
+    margin-right: auto;
     padding-bottom: 16px;
   }
 
