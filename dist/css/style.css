@@ -830,7 +830,7 @@ form {
       .paragraph-1c-wrapper .header-title {
         margin: 0 auto;
         width: 66%; } }
-  .paragraph-1c-wrapper .field-prgf-1c-title {
+  .paragraph-1c-wrapper .field-prgf-1c-title h2 {
     color: #f93549;
     font-family: 'Quicksand', sans-serif;
     font-size: 36px;
@@ -839,6 +839,7 @@ form {
     padding-bottom: 10px;
     text-transform: none; }
   .paragraph-1c-wrapper .field-prgf-1c-description {
+    font-family: 'Roboto';
     color: #231f20;
     text-align: center; }
     .paragraph-1c-wrapper .field-prgf-1c-description p {
