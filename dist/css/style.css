@@ -10,11 +10,11 @@
   font-weight: normal;
   src: url("../../fonts/roboto/Roboto-Regular.ttf"); }
 
-a[href*="://"].btn.btn-outline-primary {
+a[href*='://'].btn.btn-outline-primary {
   background: #fff;
   border: 2px solid #f93549;
   color: #f93549; }
-  a[href*="://"].btn.btn-outline-primary:active {
+  a[href*='://'].btn.btn-outline-primary:active {
     background: #fff;
     border-color: #f93549;
     color: #f93549; }
@@ -23,25 +23,25 @@ a[href*="://"].btn.btn-outline-primary {
   background: #f93549; }
 
 .no-gutter > [class*='col-'] {
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
   box-shadow: none; }
 
 .container-fluid {
-  max-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-left: auto;
   margin-right: auto;
-  margin-left: auto; }
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px; }
   .container-fluid .container-fluid {
-    padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0; }
 
 .container-post {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
   padding-left: 20px;
   padding-right: 20px; }
 
@@ -55,20 +55,20 @@ a[href*="://"].btn.btn-outline-primary {
 
 footer .container {
   max-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .navbar-brand {
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  box-sizing: content-box;
-  margin: 0 0 5px 0;
-  padding: 0;
-  width: 221px;
-  height: 69%;
   background: url(../../img/logo-full.svg) no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  box-sizing: content-box;
+  display: block;
+  height: 69%;
+  margin: 0 0 5px 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 221px; }
 
 @media (max-width: 991px) {
   .navbar-brand {
@@ -90,7 +90,7 @@ footer .container {
       padding: 0 20px; }
       .page-head__top-menu nav ul li a {
         color: #000;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 27px; }
@@ -102,13 +102,13 @@ nav .header-content {
   padding-left: 20px;
   padding-right: 20px; }
   .page-head__main-menu .navbar li a, .page-head__main-menu .navbar li button {
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    text-transform: uppercase;
-    padding: 30px 0; }
+    padding: 30px 0;
+    text-transform: uppercase; }
   .page-head__main-menu .navbar li a:hover {
     color: #f93549; }
 
@@ -116,7 +116,7 @@ nav .header-content {
   background: #f93549;
   border-color: #f93549;
   color: #fff;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -150,7 +150,7 @@ nav .header-content {
     background: transparent !important; }
   .sidebar nav li a {
     color: #fff;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     line-height: 27px; }
     .sidebar nav li a:hover {
       color: #f93549; }
@@ -158,7 +158,7 @@ nav .header-content {
     background: #f93549;
     border-color: #f93549;
     color: #fff;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
@@ -216,18 +216,18 @@ nav .header-content {
     .mobile-secondary-menu {
       left: 0; } }
   .mobile-secondary-menu nav ul {
-    padding: 0 20px;
+    display: inline-block;
     list-style: none;
     margin-bottom: 0;
-    text-align: center;
-    display: inline-block; }
+    padding: 0 20px;
+    text-align: center; }
     .mobile-secondary-menu nav ul li {
       float: left;
-      width: 50%;
-      padding: 10px; }
+      padding: 10px;
+      width: 50%; }
       .mobile-secondary-menu nav ul li a {
         color: #000;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 27px; }
@@ -238,8 +238,8 @@ nav .header-content {
   opacity: 0.7;
   position: absolute;
   top: 0;
-  z-index: 2000;
-  width: 100%; }
+  width: 100%;
+  z-index: 2000; }
 
 .content-mobile-fixed {
   height: 100%;
@@ -251,6 +251,38 @@ nav .header-content {
     .content {
       padding-top: 70px; } }
 
+.paragraph-1c-wrapper .field-prgf-1c-title h2, .block-description--2 .field-prgf-title h2, .block-description--3 .field-prgf-title h2, .subprogram-listing-item .content-without-bg .teaser-content h2 {
+  color: #f93549;
+  font-family: "Quicksand", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 48px; }
+
+.paragraph-1c-wrapper .field-prgf-1c-description p, .block-description--2 .field-prgf-description p, .block-description--3 .field-prgf-description p {
+  color: #231f20;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px; }
+
+.block-description--2 .block-description--text h4, .block-description--3 .block-description--text h4, .prev-next .text-description {
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px; }
+
+.simple-block .btn-outline-primary, .featured-posts-teaser .btn-outline-primary, .form-actions .input-wrapper .form-submit, .paragraph-1c-wrapper .block-description--text .btn-outline-primary, .block-description--2 .block-description--text .btn-outline-primary, .block-description--3 .block-description--text .btn-outline-primary, .subprogram-listing-item .btn-outline-primary {
+  background: #f93549;
+  border: 2px solid #f93549;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px; }
+
 .simple-block {
   border-top: 10px solid #f93549;
   margin: 20px 0; }
@@ -261,14 +293,9 @@ nav .header-content {
   .simple-block .simple-block-body {
     background: #fff; }
   .simple-block .btn-outline-primary {
-    background: #f93549;
-    border-color: #f93549;
     border-radius: 0 0 10px 10px;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 27px;
     width: 100%; }
     .simple-block .btn-outline-primary:active {
       background: #f93549;
@@ -285,7 +312,7 @@ nav .header-content {
     border: 1px solid #e5e5e5; }
   .simple-block .block-description--text h4 {
     color: #000;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 0;
@@ -294,7 +321,7 @@ nav .header-content {
   .simple-block .block-description--text .field-sb-body {
     padding: 10px 20px 20px; }
     .simple-block .block-description--text .field-sb-body p {
-      font-family: 'Roboto';
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       line-height: 21px; }
 
@@ -337,7 +364,7 @@ nav .header-content {
   padding-top: 20px; }
   .paragraph--type--custom-block-wrapper h2 {
     color: #000;
-    font-family: Quicksand;
+    font-family: "Quicksand", sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -353,7 +380,7 @@ nav .header-content {
     margin: 20px 20px 10px; }
     .featured-posts-teaser h4 a {
       color: #000;
-      font-family: 'Quicksand',sans-serif;
+      font-family: "Quicksand", sans-serif;
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 0;
@@ -366,18 +393,13 @@ nav .header-content {
   .featured-posts-teaser .blog-heading {
     border: 1px solid #e5e5e5; }
   .featured-posts-teaser .btn-outline-primary {
-    background: #f93549;
-    border-color: #f93549;
     border-radius: 0 0 10px 10px;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 27px;
     width: 100%; }
   .featured-posts-teaser .block-category-tag {
     color: #636466;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: italic;
     line-height: 21px; }
@@ -386,7 +408,7 @@ nav .header-content {
 
 .node--view-mode-big-teaser h2 {
   color: #000;
-  font-family: 'Quicksand';
+  font-family: "Quicksand", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -397,7 +419,7 @@ nav .header-content {
   margin-bottom: 20px; }
   .node--view-mode-big-teaser .blog-heading h4 {
     color: #f93549;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 36px; }
@@ -408,7 +430,7 @@ nav .header-content {
         display: none; } }
   .node--view-mode-big-teaser .blog-heading .block-category-tag {
     color: #636466;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: italic;
     line-height: 21px; }
@@ -438,7 +460,7 @@ nav .header-content {
       width: 100%; }
     .node--type-blog.node--view-mode-teaser .inner-wrapper p {
       color: #fff;
-      font-family: Roboto;
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px; }
@@ -459,21 +481,21 @@ nav .header-content {
       margin-top: 22px; } }
   .back-to-blog a {
     color: #fff;
-    font-family: 'Quicksand';
+    font-family: "Quicksand", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 27px; }
 
 h1.blog-title {
   color: #000;
-  font-family: 'Quicksand';
+  font-family: "Quicksand", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 60px; }
 
 .node--type-blog {
   color: #231f20;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px; }
@@ -494,7 +516,7 @@ h1.blog-title {
   border-top: 1px solid #707070; }
   .prev-next-block-post a {
     color: #f93549;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -504,7 +526,7 @@ h1.blog-title {
   padding-bottom: 20px; }
   .blog-tags-link a {
     color: #f93549;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 21px; }
 
@@ -529,7 +551,7 @@ h1.blog-title {
       padding: 5px 0; }
       .footer ul li a {
         color: #f93549;
-        font-family: 'Roboto';
+        font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 700;
         line-height: 21px; }
@@ -538,7 +560,7 @@ h1.blog-title {
     text-align: center; }
   .footer .footer-copy-links {
     color: #231f20;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px; }
@@ -547,7 +569,7 @@ h1.blog-title {
 #block-sitemap h2 {
   border-bottom: 1px dashed #95989a;
   color: #fff;
-  font-family: 'Quicksand';
+  font-family: "Quicksand", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -563,7 +585,7 @@ h1.blog-title {
   text-align: center; }
   .blog-more-teaser .all-post a {
     color: #f93549;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -589,7 +611,7 @@ h1.blog-title {
         min-height: auto; } }
 
 .paragraph--type--banner .banner-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 48px;
   font-weight: 500;
   letter-spacing: 0;
@@ -601,7 +623,7 @@ h1.blog-title {
       line-height: 48px; } }
 
 .banner-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 48px;
   font-weight: 500;
   letter-spacing: 0;
@@ -613,7 +635,7 @@ h1.blog-title {
       line-height: 48px; } }
 
 .banner-description {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -662,7 +684,7 @@ h1.blog-title {
 
 .sidebar-mobile h3,
 .sidebar-desktop h3 {
-  font-family: 'Quicksand';
+  font-family: "Quicksand", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -678,7 +700,7 @@ h1.blog-title {
     .sidebar-mobile ul li a,
     .sidebar-desktop ul li a {
       color: #f93549;
-      font-family: 'Roboto';
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px; }
@@ -738,7 +760,7 @@ form {
 
 .form-item .control-label {
   color: #231f20;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700; }
 
@@ -753,14 +775,6 @@ form {
 .form-actions .input-wrapper {
   text-align: center; }
   .form-actions .input-wrapper .form-submit {
-    background-color: #f93549;
-    border: 2px solid #f93549;
-    border-radius: 5px;
-    color: #fff;
-    font-family: 'Quicksand';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
     padding: 15px 40px;
     text-transform: uppercase; }
     .form-actions .input-wrapper .form-submit:active {
@@ -785,7 +799,7 @@ form {
   .paragraph--type--custom-block-wrapper .exposed-form-flex-wrapper .form-actions {
     margin-right: auto; }
   .paragraph--type--custom-block-wrapper .exposed-form-flex-wrapper label {
-    font-family: 'Quicksand';
+    font-family: "Quicksand", sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -808,7 +822,7 @@ form {
   .exposed-form-flex-wrapper .form-submit {
     margin-left: 0; }
   .exposed-form-flex-wrapper .form-item .control-label {
-    font-family: 'Quicksand';
+    font-family: "Quicksand", sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -831,33 +845,15 @@ form {
         margin: 0 auto;
         width: 66%; } }
   .paragraph-1c-wrapper .field-prgf-1c-title h2 {
-    color: #f93549;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 48px;
     padding-bottom: 10px;
     text-transform: none; }
-  .paragraph-1c-wrapper .field-prgf-1c-description {
-    font-family: 'Roboto';
-    color: #231f20;
+  .paragraph-1c-wrapper .field-prgf-1c-description p {
+    margin-bottom: 0;
+    padding-top: 10px;
     text-align: center; }
-    .paragraph-1c-wrapper .field-prgf-1c-description p {
-      font-size: 18px;
-      line-height: 27px;
-      margin-bottom: 0;
-      padding-top: 10px; }
   .paragraph-1c-wrapper .block-description--text {
     text-align: center; }
     .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
-      background: #f93549;
-      border: 2px solid #f93549;
-      border-radius: 5px;
-      color: #fff;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px;
       padding: 20px; }
       .paragraph-1c-wrapper .block-description--text .btn-outline-primary:active {
         background: #f93549;
@@ -867,7 +863,7 @@ form {
 
 .block-description--2.content-with-bg .block-description--text h4 {
   color: #fff;
-  font-family: 'Quicksand';
+  font-family: "Quicksand", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
@@ -875,7 +871,7 @@ form {
 
 .block-description--2.content-with-bg .field-sb-body {
   color: #fff;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px; }
@@ -896,12 +892,6 @@ form {
         width: 66%; } }
   .block-description--2 .field-prgf-title h2 {
     border-bottom: 0;
-    color: #f93549;
-    font-family: 'Quicksand';
-    font-size: 36px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 48px;
     margin-bottom: 0;
     padding-bottom: 10px;
     text-align: center;
@@ -909,31 +899,14 @@ form {
   .block-description--2 .field-prgf-description {
     padding: 10px 0 40px; }
     .block-description--2 .field-prgf-description p {
-      color: #231f20;
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      line-height: 27px;
       margin: 0;
       text-align: center; }
   .block-description--2 .block-description--text h4 {
-    color: #000;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
     margin-bottom: 0;
     padding: 0 0 20px;
     text-transform: uppercase; }
   .block-description--2 .block-description--text .btn-outline-primary {
-    background: #f93549;
-    border: 2px solid #f93549;
-    border-radius: 5px;
-    color: #fff;
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
     padding: 15px 18px;
     width: auto; }
     .block-description--2 .block-description--text .btn-outline-primary:active {
@@ -943,7 +916,7 @@ form {
       box-shadow: none; }
   .block-description--2 .field-sb-body {
     color: #231f20;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 21px; }
     .block-description--2 .field-sb-body p {
       font-size: 14px;
@@ -971,13 +944,13 @@ form {
       font-weight: 700; }
     .block-description--2 .field-sb-body .h2 {
       color: #f93549;
-      font-family: 'Quicksand';
+      font-family: "Quicksand", sans-serif;
       font-size: 36px;
       font-weight: 500;
       line-height: 54px; }
     .block-description--2 .field-sb-body .large-text {
       color: #231f20;
-      font-family: 'Roboto';
+      font-family: "Roboto", sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 27px; }
@@ -1024,12 +997,6 @@ form {
       position: unset; } }
   .block-description--3 .field-prgf-title h2 {
     border-bottom: 0;
-    color: #f93549;
-    font-family: 'Quicksand';
-    font-size: 36px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 48px;
     margin-bottom: 0;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -1038,21 +1005,12 @@ form {
   .block-description--3 .field-prgf-description {
     padding-bottom: 20px; }
     .block-description--3 .field-prgf-description p {
-      color: #231f20;
-      font-family: 'Roboto';
-      font-size: 18px;
-      line-height: 27px;
       margin: 0;
       text-align: center; }
   .block-description--3 .block-description--text {
     padding: 20px; }
     .block-description--3 .block-description--text h4 {
       border-bottom: none;
-      color: #000;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 36px;
       margin-bottom: 0;
       padding-bottom: 20px;
       text-transform: uppercase; }
@@ -1077,22 +1035,14 @@ form {
             margin-right: 15px; }
       .block-description--3 .block-description--text .field-sb-body p {
         color: #231f20;
-        font-family: 'Roboto';
+        font-family: "Roboto", sans-serif;
         font-size: 14px;
         line-height: 21px; }
       .block-description--3 .block-description--text .field-sb-body a {
         color: #f93549;
         font-weight: 700; }
     .block-description--3 .block-description--text .btn-outline-primary {
-      background: #f93549;
-      border: 2px solid #f93549;
-      border-radius: 5px;
-      color: #fff;
       display: inline-block;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px;
       margin-top: 20px;
       padding: 20px;
       text-align: left;
@@ -1126,10 +1076,6 @@ form {
   .subprogram-listing-item .content-without-bg .teaser-content {
     color: #231f20; }
     .subprogram-listing-item .content-without-bg .teaser-content h2 {
-      color: #f93549;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 36px;
-      line-height: 48px;
       margin-top: 10px;
       padding-bottom: 10px;
       text-transform: none; }
@@ -1150,7 +1096,7 @@ form {
         .subprogram-listing-item .content .teaser-content {
           width: 66%; } }
       .subprogram-listing-item .content .teaser-content h2 {
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-size: 36px;
         line-height: 48px;
         margin-top: 10px;
@@ -1161,14 +1107,6 @@ form {
         margin-top: 10px;
         padding-bottom: 10px; }
   .subprogram-listing-item .btn-outline-primary {
-    background: #f93549;
-    border: 2px solid #f93549;
-    border-radius: 5px;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
     margin: 10px auto;
     padding: 16px 20px;
     width: max-content; }
@@ -1202,17 +1140,14 @@ form {
   padding: 20px 0; }
   .prev-next h4 {
     color: #000;
-    font-family: 'Quicksand';
+    font-family: "Quicksand", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase; }
   .prev-next .text-description {
     color: #f93549;
-    font-family: Quicksand;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px; }
+    font-weight: 500; }
   .prev-next i {
     color: #f93549;
     font-size: 50px;
@@ -1227,7 +1162,7 @@ form {
   padding: 12px 0; }
   .paragraph--type--back-to a {
     color: #fff;
-    font-family: 'Quicksand';
+    font-family: "Quicksand", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 27px;

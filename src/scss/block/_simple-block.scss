@@ -11,14 +11,10 @@
   }
 
   .btn-outline-primary {
-    background: $crimson;
-    border-color: $crimson;
+    @extend %btn-global-style;
     border-radius: 0 0 10px 10px;
-    color: $white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 27px;
     width: 100%;
 
     &:active {
@@ -46,7 +42,7 @@
 
     h4 {
       color: $black;
-      font-family: 'Quicksand', sans-serif;
+      font-family: $font-family-basic;
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 0;
@@ -58,7 +54,7 @@
       padding: 10px 20px 20px;
 
       p {
-        font-family: 'Roboto';
+        font-family: $font-family-global;
         font-size: 14px;
         line-height: 21px;
       }

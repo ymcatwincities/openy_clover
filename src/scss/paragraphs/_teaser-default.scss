@@ -27,10 +27,7 @@
       color: $aubergine;
 
       h2 {
-        color: $crimson;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 36px;
-        line-height: 48px;
+        @extend %title-h2;
         margin-top: 10px;
         padding-bottom: 10px;
         text-transform: none;
@@ -57,7 +54,7 @@
       }
 
       h2 {
-        font-family: 'Quicksand', sans-serif;
+        font-family: $font-family-basic;
         font-size: 36px;
         line-height: 48px;
         margin-top: 10px;
@@ -74,14 +71,7 @@
   }
 
   .btn-outline-primary {
-    background: $crimson;
-    border: 2px solid $crimson;
-    border-radius: 5px;
-    color: $white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
+    @extend %btn-global-style;
     margin: 10px auto;
     padding: 16px 20px;
     width: max-content;

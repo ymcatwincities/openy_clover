@@ -12,11 +12,13 @@
     }
   }
 
-  .media-image.media img {
-    height: inherit;
-    margin-bottom: 20px;
-    max-width: 100%;
-    width: auto;
+  .media-image {
+    &.media img {
+      height: inherit;
+      margin-bottom: 20px;
+      max-width: 100%;
+      width: auto;
+    }
   }
 
   @media (min-width: 768px) {
@@ -33,15 +35,18 @@
       }
     }
 
-    .media-image.media {
-      height: 270px;
-      margin-bottom: 20px;
-      position: relative;
-      width: 100%;
-      @media (min-width: 767px) and (max-width: 992px) {
-        height: 160px;
+    .media-image {
+      &.media {
+        height: 270px;
+        margin-bottom: 20px;
+        position: relative;
+        width: 100%;
+        @media (min-width: 767px) and (max-width: 992px) {
+          height: 160px;
+        }
       }
     }
+
 
     .media--blazy.media {
       position: unset;
@@ -51,12 +56,7 @@
   .field-prgf-title {
     h2 {
       border-bottom: 0;
-      color: $crimson;
-      font-family: 'Quicksand';
-      font-size: 36px;
-      font-weight: 500;
-      letter-spacing: 0;
-      line-height: 48px;
+      @extend %title-h2;
       margin-bottom: 0;
       padding-bottom: 20px;
       padding-top: 20px;
@@ -69,10 +69,7 @@
     padding-bottom: 20px;
 
     p {
-      color: $aubergine;
-      font-family: 'Roboto';
-      font-size: 18px;
-      line-height: 27px;
+      @extend %description-p;
       margin: 0;
       text-align: center;
     }
@@ -83,11 +80,7 @@
 
     h4 {
       border-bottom: none;
-      color: $black;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 36px;
+      @extend %subtitle-h4;
       margin-bottom: 0;
       padding-bottom: 20px;
       text-transform: uppercase;
@@ -106,6 +99,7 @@
         li {
           display: inline-flex;
           padding-bottom: 10px;
+
           strong {
             display: contents;
           }
@@ -122,7 +116,7 @@
 
       p {
         color: $aubergine;
-        font-family: 'Roboto';
+        font-family: $font-family-global;
         font-size: 14px;
         line-height: 21px;
       }
@@ -134,15 +128,8 @@
     }
 
     .btn-outline-primary {
-      background: $crimson;
-      border: 2px solid $crimson;
-      border-radius: 5px;
-      color: $white;
+      @extend %btn-global-style;
       display: inline-block;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px;
       margin-top: 20px;
       padding: 20px;
       text-align: left;

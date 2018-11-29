@@ -20,9 +20,9 @@
   }
 }
 
-.paragraph--type--banner{
+.paragraph--type--banner {
   .banner-title {
-    font-family: 'Quicksand', sans-serif;
+    font-family: $font-family-basic;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 0;
@@ -36,7 +36,7 @@
 }
 
 .banner-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: $font-family-basic;
   font-size: 48px;
   font-weight: 500;
   letter-spacing: 0;
@@ -49,7 +49,7 @@
 }
 
 .banner-description {
-  font-family: 'Quicksand', sans-serif;
+  font-family: $font-family-basic;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;

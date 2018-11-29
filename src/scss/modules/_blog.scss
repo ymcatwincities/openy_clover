@@ -13,7 +13,7 @@
 
   h2 {
     color: $black;
-    font-family: Quicksand;
+    font-family: $font-family-basic;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -34,7 +34,7 @@
 
     a {
       color: $black;
-      font-family: 'Quicksand',sans-serif;
+      font-family: $font-family-basic;
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 0;
@@ -56,21 +56,17 @@
   }
 
   .btn-outline-primary {
-    background: $crimson;
-    border-color: $crimson;
+    @extend %btn-global-style;
     border-radius: 0 0 10px 10px;
-    color: $white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 27px;
     width: 100%;
   }
 
 
   .block-category-tag {
     color: #636466;
-    font-family: 'Roboto';
+    font-family: $font-family-global;
     font-size: 14px;
     font-style: italic;
     line-height: 21px;
@@ -86,7 +82,7 @@
 
   h2 {
     color: $black;
-    font-family: 'Quicksand';
+    font-family: $font-family-basic;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -99,7 +95,7 @@
 
     h4 {
       color: $crimson;
-      font-family: 'Roboto', sans-serif;
+      font-family: $font-family-global;
       font-size: 24px;
       font-weight: 700;
       line-height: 36px;
@@ -114,7 +110,7 @@
 
     .block-category-tag {
       color: #636466;
-      font-family: 'Roboto';
+      font-family: $font-family-global;
       font-size: 14px;
       font-style: italic;
       line-height: 21px;
@@ -155,7 +151,7 @@
 
     p {
       color: $white;
-      font-family: Roboto;
+      font-family: $font-family-global;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
@@ -185,7 +181,7 @@
 
   a {
     color: $white;
-    font-family: 'Quicksand';
+    font-family: $font-family-basic;
     font-size: 14px;
     font-weight: 500;
     line-height: 27px;
@@ -194,7 +190,7 @@
 
 h1.blog-title {
   color: $black;
-  font-family: 'Quicksand';
+  font-family: $font-family-basic;
   font-size: 48px;
   font-weight: 500;
   line-height: 60px;
@@ -202,7 +198,7 @@ h1.blog-title {
 
 .node--type-blog {
   color: $aubergine;
-  font-family: 'Roboto';
+  font-family: $font-family-global;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -230,7 +226,7 @@ h1.blog-title {
 
   a {
     color: $crimson;
-    font-family: 'Roboto';
+    font-family: $font-family-global;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -243,7 +239,7 @@ h1.blog-title {
 
   a {
     color: $crimson;
-    font-family: 'Roboto';
+    font-family: $font-family-global;
     font-size: 14px;
     line-height: 21px;
   }

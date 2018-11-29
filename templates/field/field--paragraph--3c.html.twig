@@ -54,7 +54,7 @@
   {% endfor %}
 {% elseif field_name == 'field_prgf_description' %}
   {% for item in items %}
-    <div{{ attributes.addClass('field-prgf-description') }}><p>{{ item.content }}</p></div>
+    <div{{ attributes.addClass('field-prgf-description') }}>{{ item.content }}</div>
   {% endfor %}
 {% else %}
   {% if label_hidden %}
