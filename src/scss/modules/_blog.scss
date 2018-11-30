@@ -108,39 +108,39 @@
     margin: 0 -15px 20px;
     overflow: hidden;
     position: relative;
-  }
 
-  .blog-heading {
-    background-color: transparent;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    text-align: left;
-    top: 0;
-    width: 100%;
-  }
+    .blog-heading {
+      background-color: transparent;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      width: 100%;
+    }
 
-  img {
-    width: 100%;
-  }
+    img {
+      width: 100%;
+    }
 
-  p {
-    color: $white;
-    font-family: $font-family-global;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  }
+    p {
+      color: $white;
+      font-family: $font-family-global;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
 
-  h6,
-  h2 {
-    color: $white;
-    font-size: 18px;
-    font-weight: 700;
+    h6,
+    h2 {
+      color: $white;
+      font-size: 18px;
+      font-weight: 700;
 
-    a {
-      color: $crimson;
+      a {
+        color: $crimson;
+      }
     }
   }
 }

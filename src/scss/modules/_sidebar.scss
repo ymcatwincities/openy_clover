@@ -21,7 +21,7 @@
   }
 
   // Search form.
-  input[type="submit"] {
+  input[type='submit'] {
     display: block;
     margin-left: 0;
   }
@@ -48,8 +48,8 @@
       list-style: none;
 
       a {
-        color: $crimson;
         @extend %sub-description-p;
+        color: $crimson;
       }
     }
   }
@@ -64,7 +64,7 @@
 
   .navbar-toggle {
     background: transparent;
-    border: none;
+    border: 0;
     padding-right: 0;
   }
 }

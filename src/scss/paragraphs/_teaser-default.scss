@@ -16,7 +16,7 @@
     border: 2px solid $white;
     height: 100%;
     max-width: 1200px;
-    opacity: 0.5;
+    opacity: .5;
     position: absolute;
     top: 0;
     width: 100%;
@@ -37,7 +37,7 @@
 
   .content {
     color: $white;
-    float: right !important;
+    float: right;
     font-size: 18px;
     line-height: 27px;
     margin: 40px 0;
@@ -86,9 +86,9 @@
     }
 
     &:not(:disabled):not(.disabled):active:focus {
-      box-shadow: none;
       background: $crimson;
       border-color: $crimson;
+      box-shadow: none;
       color: $white;
     }
   }
