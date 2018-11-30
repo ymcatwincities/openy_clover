@@ -49,10 +49,7 @@
 
       a {
         color: $crimson;
-        font-family: $font-family-global;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
+        @extend %sub-description-p;
       }
     }
   }

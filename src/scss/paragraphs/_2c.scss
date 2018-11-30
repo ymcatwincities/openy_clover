@@ -85,9 +85,7 @@
   }
 
   .field-sb-body {
-    color: $aubergine;
-    font-family: $font-family-global;
-    line-height: 21px;
+    @extend %sub-description-p;
 
     p {
       font-size: 14px;

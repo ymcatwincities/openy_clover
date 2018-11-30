@@ -115,10 +115,7 @@
       }
 
       p {
-        color: $aubergine;
-        font-family: $font-family-global;
-        font-size: 14px;
-        line-height: 21px;
+       @extend %sub-description-p;
       }
 
       a {
