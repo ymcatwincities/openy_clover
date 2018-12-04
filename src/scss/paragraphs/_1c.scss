@@ -19,24 +19,19 @@
   }
 
   .field-prgf-1c-title {
-    color: $crimson;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 48px;
-    padding-bottom: 10px;
-    text-transform: none;
+    h2 {
+      @extend %title-h2;
+      padding-bottom: 10px;
+      text-transform: none;
+    }
   }
 
   .field-prgf-1c-description {
-    color: $aubergine;
-    text-align: center;
-
     p {
-      font-size: 18px;
-      line-height: 27px;
+      @extend %description-p;
       margin-bottom: 0;
       padding-top: 10px;
+      text-align: center;
     }
   }
 
@@ -44,14 +39,7 @@
     text-align: center;
 
     .btn-outline-primary {
-      background: $crimson;
-      border: 2px solid $crimson;
-      border-radius: 5px;
-      color: $white;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px;
+      @extend %btn-global-style;
       padding: 20px;
 
       &:active {

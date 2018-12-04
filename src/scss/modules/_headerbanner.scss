@@ -2,8 +2,25 @@
 .banner-zone-node {
   position: relative;
 
-  .banner-bg,
-  .banner--medium .banner-cta {
+  .banner--medium {
+    .banner-cta {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      @media (min-width: 768px) {
+        min-height: auto;
+      }
+
+      @media (min-width: 576px) {
+        min-height: auto;
+      }
+    }
+  }
+
+  .banner-bg {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -14,15 +31,15 @@
       min-height: auto;
     }
 
-    @media (min-width: 576px){
+    @media (min-width: 576px) {
       min-height: auto;
     }
   }
 }
 
-.paragraph--type--banner{
+.paragraph--type--banner {
   .banner-title {
-    font-family: 'Quicksand', sans-serif;
+    font-family: $font-family-basic;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 0;
@@ -36,7 +53,7 @@
 }
 
 .banner-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: $font-family-basic;
   font-size: 48px;
   font-weight: 500;
   letter-spacing: 0;
@@ -49,7 +66,7 @@
 }
 
 .banner-description {
-  font-family: 'Quicksand', sans-serif;
+  font-family: $font-family-basic;
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
@@ -61,8 +78,10 @@
 }
 
 @media (min-width: 992px) {
-  .banner-zone-node .banner-cta {
-    padding-top: 0;
+  .banner-zone-node {
+    .banner-cta {
+      padding-top: 0;
+    }
   }
 }
 

@@ -12,11 +12,8 @@
   padding-top: 20px;
 
   h2 {
-    color: $black;
-    font-family: Quicksand;
-    font-size: 24px;
+    @extend %subtitle-h4;
     font-weight: 500;
-    line-height: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -33,21 +30,20 @@
     margin: 20px 20px 10px;
 
     a {
-      color: $black;
-      font-family: 'Quicksand',sans-serif;
-      font-size: 24px;
-      line-height: 36px;
+      @extend %subtitle-h4;
+      font-weight: 400;
       margin-bottom: 0;
       text-transform: uppercase;
     }
   }
 
   .block-category-tag {
+    @extend %sub-description-p;
+    color: $shuttle-grey;
     padding: 0 20px 20px;
 
-    h6 {
-      font-size: 14px;
-      margin-bottom: 0;
+    a {
+      color: inherit;
     }
   }
 
@@ -56,28 +52,11 @@
   }
 
   .btn-outline-primary {
-    background: $crimson;
-    border-color: $crimson;
+    @extend %btn-global-style;
     border-radius: 0 0 10px 10px;
-    color: $white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 27px;
     width: 100%;
-  }
-
-
-  .block-category-tag {
-    color: #636466;
-    font-family: 'Roboto';
-    font-size: 14px;
-    font-style: italic;
-    line-height: 21px;
-
-    a {
-      color: inherit;
-    }
   }
 }
 
@@ -85,11 +64,8 @@
 .node--view-mode-big-teaser {
 
   h2 {
-    color: $black;
-    font-family: 'Quicksand';
-    font-size: 24px;
+    @extend %subtitle-h4;
     font-weight: 500;
-    line-height: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -98,11 +74,8 @@
     margin-bottom: 20px;
 
     h4 {
+      @extend %subtitle-h4;
       color: $crimson;
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 36px;
     }
 
     p {
@@ -113,11 +86,9 @@
     }
 
     .block-category-tag {
-      color: #636466;
-      font-family: 'Roboto';
-      font-size: 14px;
-      font-style: italic;
-      line-height: 21px;
+      @extend %sub-description-p;
+      color: $shuttle-grey;
+
       a {
         color: inherit;
       }
@@ -155,15 +126,10 @@
 
     p {
       color: $white;
-      font-family: Roboto;
+      font-family: $font-family-global;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
-    }
-
-    h6 a,
-    h2 a {
-      color: $crimson;
     }
 
     h6,
@@ -171,10 +137,13 @@
       color: $white;
       font-size: 18px;
       font-weight: 700;
+
+      a {
+        color: $crimson;
+      }
     }
   }
 }
-
 
 .back-to-blog {
   background: $crimson;
@@ -185,27 +154,25 @@
 
   a {
     color: $white;
-    font-family: 'Quicksand';
+    font-family: $font-family-basic;
     font-size: 14px;
     font-weight: 500;
     line-height: 27px;
   }
 }
 
-h1.blog-title {
-  color: $black;
-  font-family: 'Quicksand';
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 60px;
+h1 {
+  &.blog-title {
+    color: $black;
+    font-family: $font-family-basic;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+  }
 }
 
 .node--type-blog {
-  color: $aubergine;
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
+  @extend %sub-description-p;
 
   a {
     color: $crimson;
@@ -215,8 +182,8 @@ h1.blog-title {
 .blog-image {
   @media (min-width: 767px) {
     float: right;
-    width: 360px;
     padding-left: 20px;
+    width: 360px;
   }
 
   img {
@@ -226,14 +193,12 @@ h1.blog-title {
 }
 
 .prev-next-block-post {
-  border-top: 1px solid #707070;
+  border-top: 1px solid $dim-gray;
 
   a {
+    @extend %sub-description-p;
     color: $crimson;
-    font-family: 'Roboto';
-    font-size: 14px;
     font-weight: 700;
-    line-height: 21px;
     text-decoration: underline;
   }
 }
@@ -242,9 +207,7 @@ h1.blog-title {
   padding-bottom: 20px;
 
   a {
+    @extend %sub-description-p;
     color: $crimson;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 21px;
   }
 }

@@ -31,6 +31,7 @@ form {
   @media (max-width: 767px) {
     width: 100%;
   }
+
   .form-control {
     width: 100%;
   }
@@ -44,12 +45,10 @@ form {
   .full-width {
     width: 100%;
   }
-}
 
-.form-item {
   .control-label {
     color: $aubergine;
-    font-family: 'Roboto';
+    font-family: $font-family-global;
     font-size: 14px;
     font-weight: 700;
   }
@@ -57,7 +56,8 @@ form {
 
 .form-type-checkbox {
   display: flex;
-  input[type="checkbox"] {
+
+  input {
     margin-right: 10px;
   }
 
@@ -68,36 +68,27 @@ form {
 }
 
 .form-actions {
-  .input-wrapper {
-    text-align: center;
-    .form-submit {
-      background-color: $crimson;
-      border: 2px solid $crimson;
-      border-radius: 5px;
+  text-align: center;
+
+  .form-submit {
+    @extend %btn-global-style;
+    padding: 15px 40px;
+    text-transform: uppercase;
+
+    &:active {
+      background: $crimson;
+      border-color: $crimson;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:not(:disabled):not(.disabled):active:focus {
+      background: $crimson;
+      border-color: $crimson;
+      box-shadow: none;
       color: $white;
-      font-family: 'Quicksand';
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 27px;
-      padding: 15px 40px;
-      text-transform: uppercase;
-
-
-      &:active {
-        background: $crimson;
-        border-color: $crimson;
-      }
-
-      &:focus {
-        box-shadow: none;
-      }
-
-      &:not(:disabled):not(.disabled):active:focus {
-        background: $crimson;
-        border-color: $crimson;
-        box-shadow: none;
-        color: $white;
-      }
     }
   }
 }
@@ -122,7 +113,7 @@ form {
     }
 
     label {
-      font-family: 'Quicksand';
+      font-family: $font-family-basic;
       font-size: 24px;
       font-weight: 500;
       line-height: 36px;
@@ -146,6 +137,15 @@ form {
   .form-item {
     margin: 1em 0;
     width: 100%;
+
+    .control-label {
+      font-family: $font-family-basic;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 36px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
   }
 
   .form-actions {
@@ -155,14 +155,5 @@ form {
 
   .form-submit {
     margin-left: 0;
-  }
-
-  .form-item .control-label {
-    font-family: 'Quicksand';
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
   }
 }

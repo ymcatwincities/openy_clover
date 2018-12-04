@@ -9,19 +9,21 @@
     margin: 10px 0;
   }
 
-  .form-actions .input-wrapper {
-    text-align: left;
+  .form-actions {
+    .input-wrapper {
+      text-align: left;
+    }
   }
 
   .search-block-form {
     .form-search {
-      border: 1px solid #666;
+      border: 1px solid $dove-gray;
       width: 100%;
     }
   }
 
   // Search form.
-  input[type="submit"] {
+  input[type='submit'] {
     display: block;
     margin-left: 0;
   }
@@ -32,7 +34,7 @@
   }
 
   h3 {
-    font-family: 'Quicksand';
+    font-family: $font-family-basic;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -48,37 +50,38 @@
       list-style: none;
 
       a {
+        @extend %sub-description-p;
         color: $crimson;
-        font-family: 'Roboto';
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
       }
     }
   }
 }
 
-.navbar.navbar-sidebar {
-  background: $light-grey;
+.navbar {
+  &.navbar-sidebar {
+    background: $light-grey;
 
-  .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg');
-  }
+    .navbar-toggler-icon {
+      background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg');
+    }
 
-  .navbar-toggle {
-    background: transparent;
-    border: none;
-    padding-right: 0;
+    .navbar-toggle {
+      background: transparent;
+      border: 0;
+      padding-right: 0;
+    }
   }
 }
 
-#sidebar-2.sidebar {
-  background: $light-grey;
-  left: 50%;
-  position: fixed;
-  top: 0;
-  z-index: 2000;
-  @media (max-width: 767px) {
-    left: 0;
+#sidebar-2 {
+  &.sidebar {
+    background: $light-grey;
+    left: 50%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    @media (max-width: 767px) {
+      left: 0;
+    }
   }
 }
