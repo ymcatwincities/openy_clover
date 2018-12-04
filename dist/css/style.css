@@ -948,7 +948,7 @@ form {
         display: inline-grid;
         list-style: none;
         margin-bottom: 0;
-        margin-top: 20px;
+        margin-top: 0;
         padding-left: 15px; }
       .block-description--3 .block-description--text .field-sb-body li {
         display: inline-flex;
