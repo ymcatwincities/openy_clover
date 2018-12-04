@@ -1078,7 +1078,8 @@ form {
         color: #231f20;
         font-family: 'Roboto';
         font-size: 14px;
-        line-height: 21px; }
+        line-height: 21px;
+        margin-bottom: 20px; }
       .block-description--3 .block-description--text .field-sb-body a {
         color: #f93549;
         font-weight: 700; }
