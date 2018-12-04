@@ -1,7 +1,8 @@
 a[href*='://'].btn.btn-outline-primary {
   background: $white;
-  border: 2px solid #f93549;
+  border: 2px solid $crimson;
   color: $crimson;
+
   &:active {
     background: $white;
     border-color: $crimson;
@@ -9,8 +10,10 @@ a[href*='://'].btn.btn-outline-primary {
   }
 }
 
-.media--loading::before {
-  background: $crimson;
+.media--loading {
+  &::before {
+    background: $crimson;
+  }
 }
 
 .no-gutter > [class*='col-'] {
@@ -18,9 +21,12 @@ a[href*='://'].btn.btn-outline-primary {
   padding-right: 20px;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-  box-shadow: none;
+.btn-outline-primary {
+  &:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+  }
 }
+
 
 .container-fluid {
   margin-left: auto;
@@ -28,6 +34,7 @@ a[href*='://'].btn.btn-outline-primary {
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
+
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -42,9 +49,11 @@ a[href*='://'].btn.btn-outline-primary {
 }
 
 .viewport {
-  main .layout-content {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  main {
+    .layout-content {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
   }
 }
 
@@ -66,7 +75,7 @@ footer .container {
   box-sizing: content-box;
   display: block;
   height: 69%;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -80,13 +89,15 @@ footer .container {
   }
 }
 
-.viewport .nav-global, .nav-global {
-  border: none;
+.viewport .nav-global,
+.nav-global {
+  border: 0;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .page-head__top-menu {
   background-color: #e5e5e5;
+
   nav ul {
     list-style: none;
     margin: 12px 0;
@@ -95,8 +106,9 @@ footer .container {
     li {
       display: inline;
       padding: 0 20px;
+
       a {
-        color: #000;
+        color: $black;
         font-family: $font-family-basic;
         font-size: 14px;
         font-weight: 400;
@@ -107,14 +119,16 @@ footer .container {
 }
 
 nav .header-content {
-  background: #000;
+  background: $black;
 }
 
 .page-head__main-menu .navbar {
   li {
     padding-left: 20px;
     padding-right: 20px;
-    a, button {
+
+    a,
+    button {
       color: $white;
       font-family: $font-family-basic;
       font-size: 18px;
@@ -124,8 +138,10 @@ nav .header-content {
       text-transform: uppercase;
     }
 
-    a:hover {
-      color: $crimson;
+    a {
+      &:hover {
+        color: $crimson;
+      }
     }
   }
 
@@ -138,6 +154,7 @@ nav .header-content {
     font-weight: 400;
     line-height: 27px;
     text-transform: uppercase;
+
     &:active {
       background: $crimson;
       border-color: $crimson;
@@ -153,15 +170,19 @@ nav .header-content {
   }
 }
 
-.layout-container .top-navs {
-  .logo {
-    @media (min-width: 992px) {
-      padding: 30px 0;
-    }
-    img {
-      width: auto;
-      @media (max-width: 992px) {
-        width: 70%;
+.layout-container {
+  .top-navs {
+    .logo {
+      @media (min-width: 992px) {
+        padding: 30px 0;
+      }
+
+      img {
+        width: auto;
+
+        @media (max-width: 992px) {
+          width: 70%;
+        }
       }
     }
   }
@@ -170,10 +191,11 @@ nav .header-content {
 //Mobile menu
 
 .sidebar {
-  background: #000;
+  background: $black;
   position: fixed;
   top: 0;
   z-index: 2000;
+
   .page-head__main-menu {
     margin-bottom: 80px;
   }
@@ -189,6 +211,7 @@ nav .header-content {
       color: $white;
       font-family: $font-family-basic;
       line-height: 27px;
+
       &:hover {
         color: $crimson;
       }
@@ -196,14 +219,9 @@ nav .header-content {
   }
 
   .btn-primary-menu {
-    background: $crimson;
-    border-color: $crimson;
-    color: $white;
-    font-family: $font-family-basic;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
+    @extend %btn-global-style;
     width: 90%;
+
     &:hover {
       background: $crimson !important;
       color: $white;
@@ -213,14 +231,17 @@ nav .header-content {
 
 .sidebar.collapse.show {
   width: 50%;
+
   @media (max-width: 767px) {
     width: 100%;
   }
 }
 
 .top-bar {
-  background-color: #e5e5e5;
-  .home-icon, .fa-times {
+  background-color: $light-grey;
+
+  .home-icon,
+  .fa-times {
     color: $crimson;
     font-size: 26px;
   }
@@ -233,12 +254,18 @@ nav .header-content {
 
 .without-banner {
   .top-navs {
-    background-color: #000;
-  }
-  .top-navs.menu-in,
-  .top-navs.affix,
-  .top-navs.affix.menu-in {
-    background: #000;
+    background-color: $black;
+
+    &.menu-in,
+    &.affix {
+      background: $black;
+    }
+
+    &.affix {
+      &.menu-in {
+        background: $black;
+      }
+    }
   }
 }
 
@@ -251,13 +278,18 @@ nav .header-content {
 .with-banner {
   .layout-container {
     .top-navs {
-      background-color: #000;
-    }
+      background-color: $black;
 
-    .top-navs.menu-in,
-    .top-navs.affix,
-    .top-navs.affix.menu-in {
-      background: #000;
+      &.menu-in,
+      &.affix {
+        background: $black;
+      }
+
+      &.affix {
+        &.menu-in {
+          background: $black;
+        }
+      }
     }
   }
 }
@@ -265,6 +297,7 @@ nav .header-content {
 @media (min-width: 992px) {
   .without-banner .top-navs:not(.affix) .page-head__main-menu .navbar > li > a {
     color: $white;
+
     &:hover {
       color: $crimson;
     }
@@ -272,12 +305,13 @@ nav .header-content {
 }
 
 .mobile-secondary-menu {
-  background-color: #e5e5e5;
+  background-color: $light-grey;
   height: auto;
   left: 50%;
   @media (max-width: 767px) {
     left: 0;
   }
+
   nav ul {
     display: inline-block;
     list-style: none;
@@ -289,8 +323,9 @@ nav .header-content {
       float: left;
       padding: 10px;
       width: 50%;
+
       a {
-        color: #000;
+        color: $black;
         font-family: $font-family-basic;
         font-size: 14px;
         font-weight: 400;
@@ -301,9 +336,9 @@ nav .header-content {
 }
 
 .overlay {
-  background-color: #000;
+  background-color: $black;
   height: 100%;
-  opacity: 0.7;
+  opacity: .7;
   position: absolute;
   top: 0;
   width: 100%;

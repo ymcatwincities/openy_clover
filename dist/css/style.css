@@ -64,7 +64,7 @@ footer .container {
   box-sizing: content-box;
   display: block;
   height: 69%;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   overflow: hidden;
   padding: 0;
   position: absolute;
@@ -75,8 +75,9 @@ footer .container {
     height: 57%;
     width: 147px; } }
 
-.viewport .nav-global, .nav-global {
-  border: none;
+.viewport .nav-global,
+.nav-global {
+  border: 0;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2); }
 
 .page-head__top-menu {
@@ -101,7 +102,8 @@ nav .header-content {
 .page-head__main-menu .navbar li {
   padding-left: 20px;
   padding-right: 20px; }
-  .page-head__main-menu .navbar li a, .page-head__main-menu .navbar li button {
+  .page-head__main-menu .navbar li a,
+  .page-head__main-menu .navbar li button {
     color: #fff;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
@@ -155,13 +157,6 @@ nav .header-content {
     .sidebar nav li a:hover {
       color: #f93549; }
   .sidebar .btn-primary-menu {
-    background: #f93549;
-    border-color: #f93549;
-    color: #fff;
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
     width: 90%; }
     .sidebar .btn-primary-menu:hover {
       background: #f93549 !important;
@@ -175,7 +170,8 @@ nav .header-content {
 
 .top-bar {
   background-color: #e5e5e5; }
-  .top-bar .home-icon, .top-bar .fa-times {
+  .top-bar .home-icon,
+  .top-bar .fa-times {
     color: #f93549;
     font-size: 26px; }
   .top-bar button {
@@ -184,11 +180,10 @@ nav .header-content {
 
 .without-banner .top-navs {
   background-color: #000; }
-
-.without-banner .top-navs.menu-in,
-.without-banner .top-navs.affix,
-.without-banner .top-navs.affix.menu-in {
-  background: #000; }
+  .without-banner .top-navs.menu-in, .without-banner .top-navs.affix {
+    background: #000; }
+  .without-banner .top-navs.affix.menu-in {
+    background: #000; }
 
 @media (max-width: 992px) {
   .without-banner .viewport {
@@ -196,11 +191,10 @@ nav .header-content {
 
 .with-banner .layout-container .top-navs {
   background-color: #000; }
-
-.with-banner .layout-container .top-navs.menu-in,
-.with-banner .layout-container .top-navs.affix,
-.with-banner .layout-container .top-navs.affix.menu-in {
-  background: #000; }
+  .with-banner .layout-container .top-navs.menu-in, .with-banner .layout-container .top-navs.affix {
+    background: #000; }
+  .with-banner .layout-container .top-navs.affix.menu-in {
+    background: #000; }
 
 @media (min-width: 992px) {
   .without-banner .top-navs:not(.affix) .page-head__main-menu .navbar > li > a {
@@ -235,7 +229,7 @@ nav .header-content {
 .overlay {
   background-color: #000;
   height: 100%;
-  opacity: 0.7;
+  opacity: .7;
   position: absolute;
   top: 0;
   width: 100%;
@@ -273,7 +267,7 @@ nav .header-content {
   font-weight: 700;
   line-height: 36px; }
 
-.simple-block .btn-outline-primary, .featured-posts-teaser .btn-outline-primary, .form-actions .input-wrapper .form-submit, .paragraph-1c-wrapper .block-description--text .btn-outline-primary, .block-description--2 .block-description--text .btn-outline-primary, .block-description--3 .block-description--text .btn-outline-primary, .subprogram-listing-item .btn-outline-primary {
+.sidebar .btn-primary-menu, .simple-block .btn-outline-primary, .featured-posts-teaser .btn-outline-primary, .form-actions .input-wrapper .form-submit, .paragraph-1c-wrapper .block-description--text .btn-outline-primary, .block-description--2 .block-description--text .btn-outline-primary, .block-description--3 .block-description--text .btn-outline-primary, .subprogram-listing-item .btn-outline-primary {
   background: #f93549;
   border: 2px solid #f93549;
   border-radius: 5px;
@@ -311,9 +305,9 @@ nav .header-content {
     .simple-block .btn-outline-primary:focus {
       box-shadow: none; }
     .simple-block .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-      box-shadow: none;
       background: #f93549;
       border-color: #f93549;
+      box-shadow: none;
       color: #fff; }
   .simple-block .block-description--text .block-heading {
     background: #fff;

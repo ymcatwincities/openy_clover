@@ -28,9 +28,9 @@
     }
 
     &:not(:disabled):not(.disabled):active:focus {
-      box-shadow: none;
       background: $crimson;
       border-color: $crimson;
+      box-shadow: none;
       color: $white;
     }
   }
