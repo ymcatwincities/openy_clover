@@ -58,7 +58,7 @@
 }
 
 .navbar {
-  .navbar-sidebar {
+  &.navbar-sidebar {
     background: $light-grey;
 
     .navbar-toggler-icon {

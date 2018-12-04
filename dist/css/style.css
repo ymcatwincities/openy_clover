@@ -642,11 +642,11 @@ h1.blog-title {
     .sidebar-desktop ul li a {
       color: #f93549; }
 
-.navbar .navbar-sidebar {
+.navbar.navbar-sidebar {
   background: #e5e5e5; }
-  .navbar .navbar-sidebar .navbar-toggler-icon {
+  .navbar.navbar-sidebar .navbar-toggler-icon {
     background-image: url("https://mdbootstrap.com/img/svg/hamburger3.svg"); }
-  .navbar .navbar-sidebar .navbar-toggle {
+  .navbar.navbar-sidebar .navbar-toggle {
     background: transparent;
     border: 0;
     padding-right: 0; }
