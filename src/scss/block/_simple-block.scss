@@ -59,10 +59,14 @@
   }
 }
 
-.media-image.media img {
-  height: auto;
-  max-width: 100%;
-  width: 100%;
+.media-image {
+  &.media {
+    img {
+      height: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .row-eq-height {
@@ -84,16 +88,20 @@
     @media (min-width: 992px) {
       height: 400px;
     }
+
+    .media__element {
+      height: 400px;
+      position: relative;
+    }
   }
 
-  .media--ratio .media__element {
-    height: 400px;
-    position: relative;
-  }
-
-  .media-image.media img {
-    height: 400px !important;
-    object-fit: cover;
-    padding: 0;
+  .media-image {
+    &.media {
+      img {
+        height: 400px !important;
+        object-fit: cover;
+        padding: 0;
+      }
+    }
   }
 }

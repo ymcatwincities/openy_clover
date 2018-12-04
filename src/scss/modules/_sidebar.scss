@@ -9,13 +9,15 @@
     margin: 10px 0;
   }
 
-  .form-actions .input-wrapper {
-    text-align: left;
+  .form-actions {
+    .input-wrapper {
+      text-align: left;
+    }
   }
 
   .search-block-form {
     .form-search {
-      border: 1px solid #666;
+      border: 1px solid $dove-gray;
       width: 100%;
     }
   }
@@ -55,27 +57,31 @@
   }
 }
 
-.navbar.navbar-sidebar {
-  background: $light-grey;
+.navbar {
+  .navbar-sidebar {
+    background: $light-grey;
 
-  .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg');
-  }
+    .navbar-toggler-icon {
+      background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg');
+    }
 
-  .navbar-toggle {
-    background: transparent;
-    border: 0;
-    padding-right: 0;
+    .navbar-toggle {
+      background: transparent;
+      border: 0;
+      padding-right: 0;
+    }
   }
 }
 
-#sidebar-2.sidebar {
-  background: $light-grey;
-  left: 50%;
-  position: fixed;
-  top: 0;
-  z-index: 2000;
-  @media (max-width: 767px) {
-    left: 0;
+#sidebar-2 {
+  &.sidebar {
+    background: $light-grey;
+    left: 50%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    @media (max-width: 767px) {
+      left: 0;
+    }
   }
 }

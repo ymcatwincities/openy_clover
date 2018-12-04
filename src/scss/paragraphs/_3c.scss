@@ -13,28 +13,17 @@
   }
 
   .media-image {
-    &.media img {
-      height: inherit;
-      margin-bottom: 20px;
-      max-width: 100%;
-      width: auto;
+    &.media {
+      img {
+        height: inherit;
+        margin-bottom: 20px;
+        max-width: 100%;
+        width: auto;
+      }
     }
   }
 
   @media (min-width: 768px) {
-    .media-image.media {
-      img {
-        left: 50%;
-        max-height: 100%;
-        max-width: 100%;
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        vertical-align: middle;
-        width: auto;
-      }
-    }
-
     .media-image {
       &.media {
         height: 270px;
@@ -44,19 +33,31 @@
         @media (min-width: 767px) and (max-width: 992px) {
           height: 160px;
         }
+
+        img {
+          left: 50%;
+          max-height: 100%;
+          max-width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          vertical-align: middle;
+          width: auto;
+        }
       }
     }
 
-
-    .media--blazy.media {
-      position: unset;
+    .media--blazy {
+      &.media {
+        position: unset;
+      }
     }
   }
 
   .field-prgf-title {
     h2 {
-      border-bottom: 0;
       @extend %title-h2;
+      border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 20px;
       padding-top: 20px;
@@ -79,14 +80,15 @@
     padding: 20px;
 
     h4 {
-      border-bottom: none;
       @extend %subtitle-h4;
+      border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 20px;
       text-transform: uppercase;
     }
 
     .field-sb-body {
+      font-family: $font-family-global;
       padding-bottom: 0;
 
       ul {
@@ -95,27 +97,27 @@
         margin-bottom: 0;
         margin-top: 20px;
         padding-left: 15px;
+      }
 
-        li {
-          display: inline-flex;
-          padding-bottom: 10px;
+      li {
+        display: inline-flex;
+        padding-bottom: 10px;
 
-          strong {
-            display: contents;
-          }
+        strong {
+          display: contents;
+        }
 
-          &:before {
-            color: $crimson;
-            content: '\f10c';
-            font-family: 'FontAwesome';
-            font-size: 12px;
-            margin-right: 15px;
-          }
+        &::before {
+          color: $crimson;
+          content: '\f10c';
+          font-family: 'FontAwesome';
+          font-size: 12px;
+          margin-right: 15px;
         }
       }
 
       p {
-       @extend %sub-description-p;
+        @extend %sub-description-p;
       }
 
       a {

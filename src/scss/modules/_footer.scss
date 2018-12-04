@@ -37,7 +37,7 @@
     }
   }
 
-  .footer__copyright {
+  .footer-copyright {
     background-color: $light-grey;
     text-align: center;
   }
@@ -50,7 +50,7 @@
 #block-views-block-latest-blog-posts-block,
 #block-sitemap {
   h2 {
-    border-bottom: 1px dashed #95989a;
+    border-bottom: 1px dashed $chateau-grey;
     color: $white;
     font-family: $font-family-basic;
     font-size: 18px;
@@ -65,17 +65,15 @@
 
 .blog-more-teaser {
   .all-post {
-    border-top: 1px dashed #95989a;
+    border-top: 1px dashed $chateau-grey;
     margin-top: 20px;
     padding-top: 20px;
     text-align: center;
 
     a {
+      @extend %sub-description-p;
       color: $crimson;
-      font-family: $font-family-global;
-      font-size: 14px;
       font-weight: 700;
-      line-height: 21px;
       padding-top: 20px;
     }
   }

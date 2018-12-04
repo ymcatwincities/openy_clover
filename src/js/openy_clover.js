@@ -51,7 +51,7 @@
 
   function matchAllHeight() {
     var el = [
-      '.viewport .page-head__main-menu .nav-level-3 > a',
+      '.viewport .page-head--main-menu .nav-level-3 > a',
       '.blog-up',
       '.blog-heading',
       '.inner-wrapper',
