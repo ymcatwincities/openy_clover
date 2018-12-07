@@ -245,7 +245,7 @@ nav .header-content {
   font-weight: 400;
   line-height: 27px; }
 
-.simple-block .block-description--text h4, .paragraph--type--custom-block-wrapper h2, .featured-posts-teaser h4 a, .node--view-mode-big-teaser h2, .node--view-mode-big-teaser .blog-heading h4, .block-description--2 .block-description--text h4, .block-description--3 .block-description--text h4, .prev-next .text-description {
+.simple-block .block-description--text h4, .paragraph--type--custom-block-wrapper h2, .featured-posts-teaser h4 a, .node--view-mode-big-teaser h2, .node--view-mode-big-teaser .blog-heading h4, .paragraph-1c-wrapper .block-description--text h4, .block-description--2 .block-description--text h4, .block-description--3 .block-description--text h4, .prev-next .text-description {
   color: #000;
   font-family: "Quicksand", sans-serif;
   font-size: 24px;
@@ -788,22 +788,29 @@ form {
     margin-bottom: 0;
     padding: 10px 0 20px;
     text-align: center; }
-  .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
-    padding: 20px; }
-    .paragraph-1c-wrapper .block-description--text .btn-outline-primary:active {
-      background: #f93549;
-      border-color: #f93549; }
-    .paragraph-1c-wrapper .block-description--text .btn-outline-primary:focus {
-      box-shadow: none; }
+  .paragraph-1c-wrapper .block-description--text {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 0; }
+    .paragraph-1c-wrapper .block-description--text h4 {
+      margin-bottom: 0;
+      padding: 0 0 20px;
+      text-transform: uppercase; }
+    .paragraph-1c-wrapper .block-description--text .btn-outline-primary {
+      padding: 20px; }
+      .paragraph-1c-wrapper .block-description--text .btn-outline-primary:active {
+        background: #f93549;
+        border-color: #f93549; }
+      .paragraph-1c-wrapper .block-description--text .btn-outline-primary:focus {
+        box-shadow: none; }
   .paragraph-1c-wrapper .field-sb-body {
     font-family: "Roboto", sans-serif;
     padding-bottom: 0;
-    font-size: 14px;
-    padding-top: 20px; }
+    font-size: 14px; }
     .paragraph-1c-wrapper .field-sb-body ul {
       display: inline-grid;
       list-style: none;
-      margin-bottom: 20px;
       margin-top: 0;
       padding-left: 15px; }
     .paragraph-1c-wrapper .field-sb-body li {

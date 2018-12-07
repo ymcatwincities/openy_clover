@@ -36,24 +36,27 @@
   * @ingroup themeable
   */
   #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph-1c-wrapper',
-    'no-gutter'
-  ]
-%}
+{% set classes = [
+  'paragraph',
+  'paragraph-1c-wrapper',
+  'no-gutter'
+] %}
+
+{% set background_color = '#' ~ content.field_prgf_color['#items'].entity.field_color.value %}
+{% set bg_color = 'background-color: '  ~  background_color %}
 
 {% if paragraph.field_prfg_display_line_above.value %}
   {% set classes = classes|merge(['block-description--wrapper--outline--top']) %}
 {% endif %}
 
-<div class="container-fluid">
-  <div{{ attributes.addClass(classes) }}>
-    <div class="header-title">
-      {{ content.field_prgf_1c_title }}
-      {{ content.field_prgf_1c_description }}
+<div {{ attributes.setAttribute('style', bg_color) }}>
+  <div class="container-fluid">
+    <div{{ attributes.addClass(classes) }}>
+      <div class="header-title">
+        {{ content.field_prgf_1c_title }}
+        {{ content.field_prgf_1c_description }}
+      </div>
+      {{ content.field_prgf_1c_column }}
     </div>
-  {{ content.field_prgf_1c_column }}
   </div>
 </div>

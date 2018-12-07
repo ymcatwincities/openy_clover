@@ -36,6 +36,17 @@
   }
 
   .block-description--text {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+
+    h4 {
+      @extend %subtitle-h4;
+      margin-bottom: 0;
+      padding: 0 0 20px;
+      text-transform: uppercase;
+    }
 
     .btn-outline-primary {
       @extend %btn-global-style;
@@ -56,12 +67,10 @@
     font-family: $font-family-global;
     padding-bottom: 0;
     font-size: 14px;
-    padding-top: 20px;
 
     ul {
       display: inline-grid;
       list-style: none;
-      margin-bottom: 20px;
       margin-top: 0;
       padding-left: 15px;
     }
