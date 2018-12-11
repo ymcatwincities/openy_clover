@@ -978,6 +978,7 @@ form {
       padding-bottom: 0; }
       .block-description--3 .block-description--text .field-sb-body ul {
         display: inline-grid;
+        font-size: 14px;
         list-style: none;
         margin-bottom: 0;
         margin-top: 0;
@@ -997,6 +998,7 @@ form {
         margin-bottom: 20px; }
       .block-description--3 .block-description--text .field-sb-body a {
         color: #f93549;
+        display: contents;
         font-weight: 700; }
     .block-description--3 .block-description--text .btn-outline-primary {
       display: inline-block;
