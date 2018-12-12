@@ -193,6 +193,9 @@ nav .header-content {
   @media (max-width: 767px) {
     .mobile-secondary-menu {
       left: 0; } }
+  @media (min-width: 992px) {
+    .mobile-secondary-menu {
+      display: none !important; } }
   .mobile-secondary-menu nav ul {
     display: inline-block;
     list-style: none;
@@ -828,6 +831,7 @@ form {
       margin-bottom: 20px; }
     .paragraph-1c-wrapper .field-sb-body a {
       color: #f93549;
+      display: contents;
       font-weight: 700; }
 
 .block-description--2 {

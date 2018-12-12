@@ -310,6 +310,9 @@ nav {
   @media (max-width: 767px) {
     left: 0;
   }
+  @media (min-width: 992px) {
+    display: none !important;
+  }
 
   nav {
     ul {
