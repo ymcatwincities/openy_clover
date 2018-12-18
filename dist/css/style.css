@@ -812,12 +812,15 @@ form {
     padding-bottom: 0;
     font-size: 14px; }
     .paragraph-1c-wrapper .field-sb-body ul {
-      display: inline-grid;
       list-style: none;
       margin-top: 0;
-      padding-left: 15px; }
+      padding-left: 30px; }
+      .paragraph-1c-wrapper .field-sb-body ul ul {
+        padding-top: 20px;
+        padding-left: 15px; }
     .paragraph-1c-wrapper .field-sb-body li {
-      display: inline-flex;
+      position: relative;
+      padding-left: 10px;
       padding-bottom: 10px; }
       .paragraph-1c-wrapper .field-sb-body li strong {
         display: contents; }
@@ -826,7 +829,8 @@ form {
         content: '\f10c';
         font-family: 'FontAwesome';
         font-size: 12px;
-        margin-right: 15px; }
+        position: absolute;
+        left: -15px; }
     .paragraph-1c-wrapper .field-sb-body p {
       margin-bottom: 20px; }
     .paragraph-1c-wrapper .field-sb-body a {
@@ -885,15 +889,16 @@ form {
     font-size: 14px;
     margin-bottom: 20px; }
   .block-description--2 .field-sb-body ul {
-    display: inline-grid;
     font-size: 14px;
     list-style: none;
     margin-top: 0;
-    padding-left: 15px; }
+    padding-left: 30px; }
     .block-description--2 .field-sb-body ul ul {
-      padding-top: 20px; }
+      padding-top: 20px;
+      padding-left: 15px; }
     .block-description--2 .field-sb-body ul li {
-      display: block;
+      padding-left: 10px;
+      position: relative;
       padding-bottom: 10px; }
       .block-description--2 .field-sb-body ul li strong,
       .block-description--2 .field-sb-body ul li a {
@@ -903,7 +908,8 @@ form {
         content: '\f10c';
         font-family: 'FontAwesome';
         font-size: 12px;
-        margin-right: 15px; }
+        position: absolute;
+        left: -15px; }
   .block-description--2 .field-sb-body a {
     color: #f93549;
     font-weight: 700; }
@@ -983,14 +989,17 @@ form {
       font-family: "Roboto", sans-serif;
       padding-bottom: 0; }
       .block-description--3 .block-description--text .field-sb-body ul {
-        display: inline-grid;
         font-size: 14px;
         list-style: none;
         margin-bottom: 0;
         margin-top: 0;
-        padding-left: 15px; }
+        padding-left: 30px; }
+        .block-description--3 .block-description--text .field-sb-body ul ul {
+          padding-top: 20px;
+          padding-left: 15px; }
       .block-description--3 .block-description--text .field-sb-body li {
-        display: inline-flex;
+        padding-left: 10px;
+        position: relative;
         padding-bottom: 10px; }
         .block-description--3 .block-description--text .field-sb-body li strong {
           display: contents; }
@@ -999,7 +1008,8 @@ form {
           content: '\f10c';
           font-family: 'FontAwesome';
           font-size: 12px;
-          margin-right: 15px; }
+          position: absolute;
+          left: -15px; }
       .block-description--3 .block-description--text .field-sb-body p {
         margin-bottom: 20px; }
       .block-description--3 .block-description--text .field-sb-body a {

@@ -90,17 +90,19 @@
     }
 
     ul {
-      display: inline-grid;
       font-size: 14px;
       list-style: none;
       margin-top: 0;
-      padding-left: 15px;
+      padding-left: 30px;
+
       ul {
         padding-top: 20px;
+        padding-left: 15px;
       }
 
       li {
-        display: block;
+        padding-left: 10px;
+        position: relative;
         padding-bottom: 10px;
 
         strong,
@@ -113,7 +115,8 @@
           content: '\f10c';
           font-family: 'FontAwesome';
           font-size: 12px;
-          margin-right: 15px;
+          position: absolute;
+          left: -15px;
         }
       }
     }
