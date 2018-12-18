@@ -95,9 +95,12 @@
       list-style: none;
       margin-top: 0;
       padding-left: 15px;
+      ul {
+        padding-top: 20px;
+      }
 
       li {
-        display: inline-flex;
+        display: block;
         padding-bottom: 10px;
 
         strong,
