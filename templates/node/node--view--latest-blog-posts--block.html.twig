@@ -93,15 +93,12 @@
       </div>
     {% endif %}
 
-    <div class="col-3">
+    <div class="col-md-3 col-5">
       {{ content.field_blog_image }}
     </div>
 
-    <div class="col-9">
+    <div class="col-md-9 col-7">
       <div class="blog-heading">
-        {#<h6 {% if (node.field_blog_style.value == "color") %} {{ attributes.setAttribute('style', color) }} {% endif %}>#}
-          {#{{ category }}#}
-        {#</h6>#}
         {% if (node.field_blog_style.value == "story") %}
           <div class="story-card">
             <div class="quote">
@@ -114,7 +111,9 @@
             {{ label }}
           </a>
         </h6>
-        {{ content.field_blog_description }}
+        <div class="blog-body">
+          {{ content.field_blog_description }}
+        </div>
       </div>
     </div>
   </div>

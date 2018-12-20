@@ -180,6 +180,12 @@
       width: 100%;
     }
 
+    @media (max-width: 992px) {
+      .blog-body {
+        display: none;
+      }
+    }
+
     p {
       color: $white;
       font-family: $font-family-global;

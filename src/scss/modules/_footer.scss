@@ -50,7 +50,7 @@
 #block-views-block-latest-blog-posts-block,
 #block-sitemap {
   h2 {
-    border-bottom: 1px dashed $chateau-grey;
+    border-bottom: 2px dotted #333;
     color: $white;
     font-family: $font-family-basic;
     font-size: 18px;
@@ -64,11 +64,15 @@
 }
 
 .blog-more-teaser {
+  padding-left: 0;
+  padding-right: 0;
   .all-post {
-    border-top: 1px dashed $chateau-grey;
-    margin-top: 20px;
-    padding-top: 20px;
+    border-top: 2px dotted #333;
+    padding: 20px 0 0;
     text-align: center;
+    @media (max-width: 767px) {
+      padding: 20px 0 40px;
+    }
 
     a {
       @extend %sub-description-p;
@@ -78,3 +82,10 @@
     }
   }
 }
+//
+//.footer .latest-blog-posts {
+//  border-bottom: 1px dotted #95989a;
+//}
+//.posts-list {
+//  margin-bottom: 20px;
+//}
