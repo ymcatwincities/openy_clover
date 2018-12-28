@@ -346,7 +346,7 @@ nav .header-content {
   padding-top: 20px; }
   .paragraph--type--custom-block-wrapper h2 {
     font-weight: 500;
-    margin-bottom: 20px;
+    margin: 20px 0;
     text-transform: uppercase; }
   .paragraph--type--custom-block-wrapper .pager li.load_more_button::before {
     display: none; }
@@ -702,13 +702,16 @@ h1.blog-title {
 
 .sidebar-mobile ul,
 .sidebar-desktop ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 40px; }
   .sidebar-mobile ul li,
   .sidebar-desktop ul li {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0; }
     .sidebar-mobile ul li a,
     .sidebar-desktop ul li a {
-      color: #f93549; }
+      color: #f93549;
+      text-transform: none; }
 
 .navbar.navbar-sidebar {
   background: #e5e5e5; }
@@ -802,6 +805,7 @@ form {
     margin-right: auto;
     margin-top: 0; }
   .paragraph--type--custom-block-wrapper .exposed-form-flex-wrapper .form-actions {
+    padding-bottom: 0;
     margin-right: auto; }
   .paragraph--type--custom-block-wrapper .exposed-form-flex-wrapper label {
     font-family: "Quicksand", sans-serif;
@@ -826,8 +830,11 @@ form {
       font-size: 24px;
       font-weight: 500;
       line-height: 36px;
-      margin-bottom: 20px;
+      margin: 20px 0;
       text-transform: uppercase; }
+      @media (max-width: 991px) {
+        .exposed-form-flex-wrapper .form-item .control-label {
+          margin-top: 0; } }
   .exposed-form-flex-wrapper .form-actions {
     margin-right: auto;
     padding-bottom: 16px; }

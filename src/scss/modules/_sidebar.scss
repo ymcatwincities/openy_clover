@@ -44,14 +44,16 @@
 
   ul {
     padding-left: 0;
+    margin-bottom: 40px;
 
     li {
-
       list-style: none;
+      padding-left: 0;
 
       a {
         @extend %sub-description-p;
         color: $crimson;
+        text-transform: none;
       }
     }
   }
