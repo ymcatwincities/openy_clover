@@ -122,8 +122,9 @@ nav .header-content {
     color: #f93549; }
 
 .page-head--main-menu .btn-primary-menu {
-  font-weight: 400;
-  text-transform: uppercase; }
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  margin-left: 20px; }
   .page-head--main-menu .btn-primary-menu:active {
     background: #f93549;
     border-color: #f93549; }
@@ -148,6 +149,7 @@ nav .header-content {
     .sidebar nav li a:hover {
       color: #f93549; }
   .sidebar .btn-primary-menu {
+    margin-top: 20px;
     width: 90%; }
     .sidebar .btn-primary-menu:hover {
       background: #f93549 !important;
