@@ -186,8 +186,9 @@ nav {
 
   .btn-primary-menu {
     @extend %btn-global-style;
-    font-weight: 400;
+    font-weight: 400 !important;
     text-transform: uppercase;
+    margin-left: 20px;
 
     &:active {
       background: $crimson;
@@ -238,6 +239,7 @@ nav {
 
   .btn-primary-menu {
     @extend %btn-global-style;
+    margin-top: 20px;
     width: 90%;
 
     &:hover {
