@@ -21,14 +21,14 @@
       <img class="logo-img" src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
     </a>
   {% else %}
-    <div class="d-flex align-items-center">
+    <div class="d-none align-items-center">
       <a class="navbar-brand" href="{{ base_path }}" title="{{ "OpenY"|t }}" rel="{{ "OpenY"|t }}"></a>
     </div>
   {% endif %}
 
-  <span class="d-none">
+  <span class="d-flex site-name">
     {% if site_name %}
-      {{ site_name }}
+      <h1>{{ site_name }}</h1>
     {% endif %}
     {% if site_slogan %}
       {{ site_slogan }}

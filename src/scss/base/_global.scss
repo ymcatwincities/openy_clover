@@ -104,10 +104,23 @@ footer {
   width: 221px;
 }
 
+.site-name {
+  color: $white;
+  font-family: $font-family-basic;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 60px;
+  text-transform: none;
+}
+
 @media (max-width: 991px) {
   .navbar-brand {
     height: 57%;
     width: 147px;
+    font-family: $font-family-basic;
+    background: none;
+    font-size: 28px;
   }
 }
 

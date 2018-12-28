@@ -78,10 +78,22 @@ footer .container {
   position: absolute;
   width: 221px; }
 
+.site-name {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 60px;
+  text-transform: none; }
+
 @media (max-width: 991px) {
   .navbar-brand {
     height: 57%;
-    width: 147px; } }
+    width: 147px;
+    font-family: "Quicksand", sans-serif;
+    background: none;
+    font-size: 28px; } }
 
 .nav-global {
   border: 0;
