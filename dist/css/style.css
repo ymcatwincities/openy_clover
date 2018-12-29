@@ -372,7 +372,7 @@ nav .header-content {
   width: auto; }
 
 .paragraph--type--custom-block-wrapper {
-  padding-bottom: 20px;
+  padding-bottom: 0;
   padding-top: 20px; }
   .paragraph--type--custom-block-wrapper h2 {
     font-weight: 500;
