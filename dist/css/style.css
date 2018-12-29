@@ -152,17 +152,24 @@ nav .header-content {
   z-index: 2000; }
   .sidebar .page-head--main-menu {
     margin-bottom: 80px; }
-  .sidebar nav a:hover {
-    background: transparent !important; }
-  .sidebar nav li a {
-    color: #fff;
-    font-family: "Quicksand", sans-serif;
-    line-height: 27px; }
-    .sidebar nav li a:hover {
-      color: #f93549; }
+  .sidebar .nav-level-2 a {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .sidebar nav {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .sidebar nav a:hover {
+      background: transparent !important; }
+    .sidebar nav li a {
+      color: #fff;
+      font-family: "Quicksand", sans-serif;
+      line-height: 27px; }
+      .sidebar nav li a:hover {
+        color: #f93549; }
   .sidebar .btn-primary-menu {
     margin-top: 20px;
-    width: 90%; }
+    width: 100%;
+    margin-left: 0; }
     .sidebar .btn-primary-menu:hover {
       background: #f93549 !important;
       color: #fff; }
@@ -173,7 +180,9 @@ nav .header-content {
         width: 100%; } }
 
 .top-bar {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .top-bar .home-icon,
   .top-bar .fa-times {
     color: #f93549;
