@@ -86,6 +86,8 @@ footer .container {
   letter-spacing: 0;
   line-height: 60px;
   text-transform: none; }
+  .site-name:hover {
+    color: #fff; }
 
 @media (max-width: 991px) {
   .navbar-brand {
@@ -180,7 +182,7 @@ nav .header-content {
         width: 100%; } }
 
 .nav-title {
-  color: #fff;
+  color: #231f20;
   font-family: "Roboto", sans-serif;
   font-size: 16px; }
 

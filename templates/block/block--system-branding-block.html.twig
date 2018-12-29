@@ -26,12 +26,12 @@
     </div>
   {% endif %}
 
-  <span class="d-flex site-name">
+  <a class="d-flex site-name" href="{{ base_path }}" title="{{ "OpenY"|t }}" rel="{{ "OpenY"|t }}">
     {% if site_name %}
-      <h1>{{ site_name }}</h1>
+      {{ site_name }}
     {% endif %}
     {% if site_slogan %}
       {{ site_slogan }}
     {% endif %}
-  </span>
+  </a>
 {% endblock %}

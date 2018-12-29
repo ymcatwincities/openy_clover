@@ -112,6 +112,9 @@ footer {
   letter-spacing: 0;
   line-height: 60px;
   text-transform: none;
+  &:hover {
+    color: $white;
+  }
 }
 
 @media (max-width: 991px) {
@@ -266,7 +269,7 @@ nav {
   }
 }
 .nav-title {
-  color: $white;
+  color: $aubergine;
   font-family: $font-family-global;
   font-size: 16px;
 }
