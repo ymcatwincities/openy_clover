@@ -82,6 +82,17 @@
     }
   };
 
+  Drupal.behaviors.openyRemovePadding = {
+    attach: function (context, settings) {
+      var twoCol = $('.block-description--2');
+      var twoColParent = twoCol.parent().parent().parent();
+      var nextItem = twoColParent.next();
+      if(nextItem.hasClass('block-description--2')) {
+        twoCol.addClass('pb-0');
+      }
+    }
+  };
+
   Drupal.behaviors.openySidebarContent = {
     attach: function (context, settings) {
       var sidebar = $('#sidebar-2');
