@@ -622,6 +622,8 @@ h1.blog-title {
 
 .banner-zone-node {
   position: relative; }
+  .banner-zone-node h1 {
+    letter-spacing: 0; }
   .banner-zone-node .banner--medium .banner-cta {
     bottom: 0;
     left: 0;
@@ -636,15 +638,16 @@ h1.blog-title {
       .banner-zone-node .banner--medium .banner-cta {
         min-height: auto; } }
   .banner-zone-node .banner-bg {
-    min-height: 500px;
-    height: 100%;
     bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 1; }
-    @media (max-width: 991px) {
+    @media (min-width: 768px) {
+      .banner-zone-node .banner-bg {
+        min-height: auto; } }
+    @media (min-width: 576px) {
       .banner-zone-node .banner-bg {
         min-height: auto; } }
 
