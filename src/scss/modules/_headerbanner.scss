@@ -21,17 +21,15 @@
   }
 
   .banner-bg {
+    min-height: 500px;
+    height: 100%;
     bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 1;
-    @media (min-width: 768px) {
-      min-height: auto;
-    }
-
-    @media (min-width: 576px) {
+    @media (max-width: 991px) {
       min-height: auto;
     }
   }
