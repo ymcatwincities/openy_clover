@@ -606,6 +606,9 @@ h1.blog-title {
       font-weight: 700;
       padding-top: 20px; }
 
+.banner {
+  background-color: #000; }
+
 .banner-zone-node {
   position: relative; }
   .banner-zone-node h1 {
