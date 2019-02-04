@@ -610,6 +610,8 @@ h1.blog-title {
   position: relative; }
   .banner-zone-node h1 {
     letter-spacing: 0; }
+  .banner-zone-node .banner-bg {
+    background: #000; }
   .banner-zone-node .banner--medium .banner-cta {
     bottom: 0;
     left: 0;
