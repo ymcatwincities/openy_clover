@@ -607,7 +607,7 @@ h1.blog-title {
       padding-top: 20px; }
 
 .banner {
-  background-color: #000; }
+  background-color: #000 !important; }
 
 .banner-zone-node {
   position: relative; }
