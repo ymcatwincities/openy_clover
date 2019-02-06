@@ -681,6 +681,10 @@ h1.blog-title {
   .banner-zone-node .banner-cta {
     padding-top: 0; } }
 
+@media (max-width: 991px) {
+  .banner-zone-node .banner-bg {
+    background-attachment: scroll !important; } }
+
 .banner--small {
   min-height: auto;
   padding-top: 0; }
