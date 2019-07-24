@@ -1163,6 +1163,7 @@ form {
     position: relative;
     text-align: center; }
     .subprogram-listing-item .content .teaser-content {
+      font-family: "Roboto", sans-serif;
       margin: 0 auto;
       padding: 0;
       position: relative; }
