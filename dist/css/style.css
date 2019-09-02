@@ -886,6 +886,9 @@ form {
   .paragraph-1c-wrapper .field-prgf-1c-title h2 {
     padding-bottom: 10px;
     text-transform: none; }
+  .paragraph-1c-wrapper .field-prgf-1c-description a {
+    color: #f93549;
+    font-weight: 700; }
   .paragraph-1c-wrapper .field-prgf-1c-description p {
     margin-bottom: 0;
     padding: 10px 0 20px;

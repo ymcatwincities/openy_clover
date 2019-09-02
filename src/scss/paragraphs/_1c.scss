@@ -27,6 +27,11 @@
   }
 
   .field-prgf-1c-description {
+    a {
+      color: #f93549;
+      font-weight: 700;
+    }
+
     p {
       @extend %description-p;
       margin-bottom: 0;
