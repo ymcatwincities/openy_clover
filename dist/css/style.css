@@ -273,7 +273,8 @@ nav .header-content {
 
 .page-head--main-menu .btn-primary-menu, .sidebar .btn-primary-menu, .simple-block .btn-outline-primary,
 .simple-block .btn-outline-primary-darker, .paragraph--type--custom-block-wrapper .pager li.load_more_button > a, .featured-posts-teaser .btn-outline-primary, .form-actions .form-submit, .paragraph-1c-wrapper .block-description--text .btn-outline-primary, .block-description--2 .block-description--text .btn-outline-primary,
-.block-description--2 .block-description--text .btn-outline-primary-darker, .block-description--3 .block-description--text .btn-outline-primary, .subprogram-listing-item .btn-outline-primary {
+.block-description--2 .block-description--text .btn-outline-primary-darker, .block-description--3 .block-description--text .btn-outline-primary,
+.block-description--3 .block-description--text .btn-outline-primary-darker, .subprogram-listing-item .btn-outline-primary {
   background: #f93549;
   border: 2px solid #f93549;
   border-radius: 5px;
@@ -1134,17 +1135,20 @@ form {
         color: #f93549;
         display: contents;
         font-weight: 700; }
-    .block-description--3 .block-description--text .btn-outline-primary {
+    .block-description--3 .block-description--text .btn-outline-primary,
+    .block-description--3 .block-description--text .btn-outline-primary-darker {
       display: inline-block;
       margin-top: 20px;
       padding: 20px;
       text-align: left;
       white-space: normal;
       width: auto; }
-      .block-description--3 .block-description--text .btn-outline-primary:active {
+      .block-description--3 .block-description--text .btn-outline-primary:active,
+      .block-description--3 .block-description--text .btn-outline-primary-darker:active {
         background: #f93549;
         border-color: #f93549; }
-      .block-description--3 .block-description--text .btn-outline-primary:focus {
+      .block-description--3 .block-description--text .btn-outline-primary:focus,
+      .block-description--3 .block-description--text .btn-outline-primary-darker:focus {
         box-shadow: none; }
 
 .subprogram-listing-item {
