@@ -12,44 +12,36 @@
     }
   }
 
-  .media-image {
-    &.media {
-      img {
-        height: inherit;
-        margin-bottom: 20px;
-        max-width: 100%;
-        width: auto;
-      }
+  .media-image.media,
+  .media--image {
+    img {
+      height: inherit;
+      margin-bottom: 20px;
+      max-width: 100%;
+      width: auto;
     }
   }
 
   @media (min-width: 768px) {
-    .media-image {
-      &.media {
-        height: 270px;
-        margin-bottom: 20px;
-        position: relative;
-        width: 100%;
-        @media (min-width: 767px) and (max-width: 992px) {
-          height: 160px;
-        }
-
-        img {
-          left: 50%;
-          max-height: 100%;
-          max-width: 100%;
-          position: absolute;
-          top: 50%;
-          transform: translateX(-50%) translateY(-50%);
-          vertical-align: middle;
-          width: auto;
-        }
+    .media-image.media,
+    .media--image {
+      height: 270px;
+      margin-bottom: 20px;
+      position: relative;
+      width: 100%;
+      @media (min-width: 767px) and (max-width: 992px) {
+        height: 160px;
       }
-    }
 
-    .media--blazy {
-      &.media {
-        position: unset;
+      img {
+        left: 50%;
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        vertical-align: middle;
+        width: auto;
       }
     }
   }
@@ -135,7 +127,8 @@
       }
     }
 
-    .btn-outline-primary {
+    .btn-outline-primary,
+    .btn-outline-primary-darker {
       @extend %btn-global-style;
       display: inline-block;
       margin-top: 20px;

@@ -64,7 +64,8 @@
       text-transform: uppercase;
     }
 
-    .btn-outline-primary {
+    .btn-outline-primary,
+    .btn-outline-primary-darker {
       @extend %btn-global-style;
       display: inline-block;
       padding: 15px 18px;
