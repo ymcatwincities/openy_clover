@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.6.0",
     "breakpoint-sass": "^2.7.1",
     "grunt": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
