@@ -418,9 +418,10 @@ braces@^2.3.0, braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-breakpoint-sass@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/breakpoint-sass/-/breakpoint-sass-2.7.1.tgz#8ef6c4744dcc25ba83d969b6c9a17e5daa29980a"
+breakpoint-sass@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/breakpoint-sass/-/breakpoint-sass-3.0.0.tgz#c24c4c627782dae5f4da4e884461bd0fb9befe41"
+  integrity sha512-qxJqSfTaOHI+RCGzvKWVRwwC2hMIaS0KV1b+asqWUFxdLv/yKNADF7AtT1uNnkt2VxSMZ2csM22CSc+Hez+EIg==
 
 browserslist@^4.1.0:
   version "4.1.1"
